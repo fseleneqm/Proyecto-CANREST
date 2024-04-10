@@ -1,0 +1,54 @@
+/* Definir colores corporativos que usaremos */
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --primario: #FFBD59;
+}
+
+/* Limpiar márgenes, padding y bordes base del doc html*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* definir el tamaño general del html y del body */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/*  Inserción de iconos para el selector de idiomas */
+#select_idioma option[value="es"]::before {
+    background-image: url('../img/spain-flag.svg');
+}
+
+#select_idioma option[value="en"]::before {
+    background-image: url('../img/united-kingdom-flag.svg');
+}
+
+/* Tamaño del logo */
+#logo {
+    width: 50%; 
+    max-width: 600px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+}
+
+/* Tamaño de los iconos en la sección servicios */
+.seccion_servicios img {
+    width: 10%; 
+    max-width: 60px;
+    height: auto;
+}
+
+/* Tamaño de los iconos divisores entre secciones del home */
+.seccion_servicios .icono_divisor, .icono_divisor {
+    width: 20%; 
+    max-width: 600px;
+    height: auto;
+}
