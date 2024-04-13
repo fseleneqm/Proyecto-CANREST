@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-family: "Consolas", sans-serif;
+    font-size: 52px;
+}
+
+h3{
+    font-family: "Consolas", sans-serif;
+    font-size: 36px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#logo{
+    border: 2px;
+    border-color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+
+#imgarriba{
+    width: 5%;
+}
+.redes{
+    width: 5%;
+    float: right;
+}
