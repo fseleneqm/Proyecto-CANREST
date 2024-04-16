@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html body {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  /* poner siempre para que el html tenga tamaño definido*/
+}
+
+header {
+  height: 20%;
+  background-color: #000000;
+}
+
+header select{
+  position: absolute;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#logo{
+  height: 200px;
+  width: 100%;
+}
+
+header p {
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+
+nav{
+  height: 5%;
+  background-color: rgb(255, 183, 0); /* Cambia el color de fondo según lo necesites */
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  padding: 10px; /* Espaciado alrededor del texto */
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Cambia el color del texto a azul */
+  margin: 5px;
+  padding: 0;
+  border: 0;
+}
+
+section{
+  display: block;
+  border: 1px solid #000000;
+  text-align: center;
+
+
+}
+
+footer {
+  color: white;
+  background-color: #000000; /* Verde */
+  width: 100%;
+  height: 10%;
+}
+
+
+.texto_footer{
+  background-color: #000000;
+  text-align: left;
+  display: inline;
+  font-size: small;
+  color: white;
+  float: left;
+  }
+
+.redes{
+  width: 20px;
+  height: 20px;
+}
+
+.dog_up{
+  align-items: center;
+  width: 75px;
+  height: 75px; 
+}
+
+.img_footer{
+  float: right;
+  background-color: #000000;
+  text-align: end;
+  }
