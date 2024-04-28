@@ -1,0 +1,67 @@
+/* Hoja de Estilos Boceto 1. 
+Grupo 7 - 2º DAW N
+*/
+
+/* BUENAS PRÁCTICAS:
+
+- Un ID se utiliza para seleccionar un solo elemento, mientras que una clase se utiliza para seleccionar más de un elemento. Utilizarás un ID para aplicar un estilo a un único elemento HTML. Utilizarás una clase para aplicar un estilo a más de un elemento HTML. 
+los ID están pensados para aplicar estilos a las excepciones de la página, no para estilos generales que se apliquen a toda la página o sitio web.
+
+- método DRY significa «Don’t Repeat Yourself» (no te repitas) y es básicamente la idea de que nunca debes repetir código en CSS.
+
+- Utilizar varias clases para un mismo elemento
+*/
+
+
+/* Eliminamos los bordes, márgenes y paddings que
+agrega el navegador por defecto:  */
+* {
+  margin: 0;
+  /*border: 0;*/
+  padding: 0;
+}
+
+/* Tamaños del html y del body: */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos de la cabecera  */
+header {
+  background-color: black;
+  /*background-image: "imagenes/Logo perrito.svg";
+  background-position: relative;
+  background-attachment: fixed;*/
+  position: relative;
+  width: 100%;
+  height: 50%;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+}
+
+/* Tamaño del logo: */
+#logo {
+
+}
+
+/* Estilos menú de navegación: */
+.m-navegacion ul{
+  list-style-type: none;
+  overflow: hidden;
+
+}
+ /* Items del menú en línea horizontal y
+comportamiento de bloque: */
+.m-navegacion li {
+  display: inline-block; 
+  margin: 10px;
+}
+
+/*  */
+.m-navegacion a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
