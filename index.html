@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Empresa Hotel de Mascotas"/>
+    <meta name="keyword" content="hotel, mascotas, cuidados, servicios, peluquería canina, perros, gatos, descanso"/>
     <title>CAN REST - Hotel para mascotas</title>
-    <!-- Ruta a archivo css externo: -->
-    <link rel="stylesheet" type="text/css" href="estilosB1.css" media="all">
+    <!-- Ruta a archivo css: -->
+    <link rel="stylesheet" href="css/style.css" media="all"/>
   </head>
 
   <body>
-    <!-- Barra de progreso:
-    <progress></progress> ??? -->
-    
-    <!-- Cabecera: logo, nombre hotel, eslogan e idiomas. -->
-    <header class="cabecera" tittle="Cabecera del sitio web">
+    <!-- Cabecera: -->
+    <header tittle="Cabecera del sitio web">
       
-      <!-- Imagen del logo: -->
-      <img id="Logo" src="imagenes/Logo perrito.svg" alt="El logo es un perrito feliz durmiendo" title="El logo es un perrito feliz durmiendo"></img>
+      <!-- Logo: -->
+      <img id="Logo" src="imagenes/Logo perrito.svg" alt="El logo es un perrito feliz durmiendo" title="El logo es un perrito feliz durmiendo"/>
       
       <!-- Nombre hotel: CAN REST -->
-      <h1 id="n-hotel">CAN REST</h1>
+      <h1>CAN REST</h1>
       <p id="eslogan">Donde el descanso no tiene raza</p>
 
       <!-- Idiomas: Español e Inglés -->
       <!-- Iconos de banderas: -->
 
-
     </header>
 
     <!-- Barra de navegacion: Lista desordenada con enlaces a las secciones para el menu de siete botones: -->
-    <nav class="m-navegacion" title="Menú de navegación">
+    <nav title="Menú de navegación">
       <ul>
         <li><a href="#index" title="Vuelve al inicio">INICIO</a></li>
         <li><a href="#servicios" title="Dirige a la página de Servicios">SERVICIOS</a></li>
         <li><a href="#reservas" title="Dirige a la página de Reservas">RESERVAS</a></li>
-        <li><a href="" title="Dirige a la parte superior de la web"></a> <img src="imagenes/dog_up.svg" alt="Botón para volver arriba en la página"></li>
+        <li><a href="#index" title="Dirige a la parte superior de la web"></a> <img src="imagenes/dog_up.svg" alt="Botón para volver arriba en la página"></li>
         <li><a href="#fotos" title="Dirige a la sección de Fotos">FOTOS</a></li>
         <li><a href="#nosotros" title="Dirige a la página de Nosotros">NOSOTROS</a></li>
         <li><a href="#reseñas" title="Dirige a la página de Reseñas">RESEÑAS</a></li>
@@ -48,7 +46,7 @@
       </section>
 
       <!-- Imagen perrito naranja como separador: -->
-      <img id="separador" src="imagenes/Logo naranja.svg" alt="Perrito feliz durmiendo de color naranja como divisor de secciones" title="Divisor de secciones"></img>
+      <img id="separador" src="imagenes/Logo naranja.svg" alt="Perrito feliz durmiendo de color naranja como divisor de secciones" title="Divisor de secciones"/>
 
       <!-- Sección "Servicios" -->
       <section id="servicios" class="secciones">
@@ -58,7 +56,7 @@
         <!-- 1. Servicio de hotel -->
         <section id="servicio-hotel">
           <!-- Imagen Huella para la sección de servicios del hotel-->
-          <img id="hotel" src="imagenes/icono-hotel-perros.svg" alt="Icono para los servicios de hotel" title="Icono servicios de hotel"></img>
+          <img id="hotel" src="imagenes/icono-hotel-perros.svg" alt="Caseta para mascotas como hotel para ilustrar los servicios de hotel" title="Icono servicios de hotel"></img>
           <h3>Hotel:</h3>
           <p>Disfruta tus vacaciones y nosotros los cuidamos</p>
         </section>
@@ -66,15 +64,15 @@
         <!-- 2. Servicio de Peluqueria:-->
         <section id="peluqueria">
           <!-- Icono de la sección de peluquería: -->
-          <img id="iconpelu" src="imagenes/icono-peluquería.svg" alt="Icono para los servicios de peluquería" title="Icono servicios de peluquería"></img>
+          <img id="iconpelu" src="imagenes/icono-peluquería.svg" alt="Unas tijeras y un peine cruzados para ilustrar los servicios de peluquería" title="Icono servicios de peluquería"></img>
           <h3>Peluquería:</h3>
           <p>Ponemos guapos a tus perritos</p>
         </section>
       </section>
       
       <!-- Sección "Fotos" -->
-      <section id="fotos" class="galeria">
-        <img id="iconfotos" src="imagenes/icono-camara.svg" alt="Icono para la galería de fotos" title="Icono Galería de fotos"></img>
+      <section id="fotos">
+        <img id="iconfotos" src="imagenes/icono-camara.svg" alt="Icono con forma de cámara para ilustrar la galería de fotos" title="Icono Galería de fotos"></img>
         <h2>Fotos</h2>
         <p>Capturamos la esencia de tus mascotas</p>
         <!-- Recuadro con las fotos de perritos y del hotel dentro (introducir imágenes) -->
@@ -85,15 +83,16 @@
       <!-- Sección "Reseñas"-->
       <section id="reseñas" class="secciones">
         <h2>Reseñas</h2>
-        <img id="comillas1" src="imagenes/comillas inicio.svg" alt="Icono que indica el inicio de la reseña" title="Icono 1 sección de reseñas"></img>
-        <img id="comillas2" src="imagenes/comillas cierre.svg" alt="Fin de la reseña" title="Icono 2 sección de reseñas"></img>
+        <img id="comillas1" src="imagenes/comillas inicio.svg" alt="Comilla que indica el inicio de una cita para ilustrar la sección de las reseñas" title="Icono 1 sección de reseñas"></img>
+        <img id="comillas2" src="imagenes/comillas cierre.svg" alt="Comilla que indica el fin de una cita para ilustrar la sección de las reseñas" title="Icono 2 sección de reseñas"></img>
         <!-- Recuadro con imagen de las comillas y un ejemplo de reseña que cambia -->
         <p>Reseña</p>
       </section>
     </main>
     
     <!-- Pie de Página: -->
-    <footer class="pie-pag" title="Pie de página">
+    <footer title="Pie de Página">
+      <a href="" >Términos y Condiciones</a>
       <!--
         - Términos y condiciones
         - Datos de contacto
