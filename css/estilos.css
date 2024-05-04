@@ -1,0 +1,259 @@
+/* Definir colores corporativos que usaremos */
+:root {
+  --blanco: #FFFFFF;
+  --negro: #000000;
+  --primario: #FFBD59;
+  font-family: "Montserrat", sans-serif; /* Establecemos la fuente a usar por todo el doc */
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Limpiar márgenes, padding y bordes base del doc html*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* definir aspectos en general del html */
+html {
+  /* ponemos el tamaño al máximo del doc */
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
+}
+
+body {
+  font-size: 16px; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
+}
+
+
+/*  ************HEADER************** */
+
+/* Estilos para el header */
+header {
+  text-align: center;
+  background-color: var(--negro);
+  color: white;
+  padding: 2rem 0;
+}
+
+#select_idioma {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+#logo {
+  margin-bottom: 1rem;
+  max-width: 50rem;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 5rem;
+  color: var(--blanco);
+  font-family: 'Consolas', sans-serif;
+}
+
+#slogan {
+  margin: 0.1rem 0;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--blanco);
+  font-family: 'Consolas', sans-serif;
+}
+
+.menu-idioma img {
+  max-width: 3rem;
+}
+
+.idiomas-dispo ul {
+  display: none;
+}
+
+
+.idiomas-dispo ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  */
+.menu-idioma:hover ul {
+  display: block;
+}
+
+/* ************NAVEGACIÓN************** */
+
+/* Estilos para el menú de navegación */
+.navegador {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+.navegador ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid black;
+  padding: 1rem;
+}
+
+.navegador ul li {
+  margin-right: 2rem;
+}
+
+.navegador ul li:last-child {
+  margin-right: 0;
+}
+
+.navegador ul li a {
+  color: var(--negro);
+  text-decoration: none;
+  padding: 1.4rem 1.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navegador ul li a:hover {
+  color: #ffc800;
+}
+
+
+/*  ************SECCIONES********** */
+/* Estilos para las secciones */
+section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.titulo_seccion {
+  margin-top: 0;
+}
+
+.icono_divisor {
+  width: 15rem;
+  margin: 2rem auto;
+}
+
+/* Estilos para los títulos de los artículos */
+.seccion_quienes .titulo_seccion,
+.seccion_servicios .titulo_seccion,
+.seccion_fotos .titulo_seccion,
+.seccion_resena .titulo_seccion {
+  margin-top: 0; 
+  font-size: 3rem; /* Tamaño grande para llamar la atención */
+  font-family: 'Consolas', sans-serif;
+  color: var(--primario); /* Color anaranjado */
+  text-transform: uppercase; /* Convertir texto en mayúsculas */
+  letter-spacing: 0.2rem; /* Espaciado entre letras */
+}
+
+
+/* Estilos para el artículo de servicios */
+.seccion_servicios {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  justify-content: space-between; /* Distribuir el espacio entre los elementos */
+  align-items: flex-start; /* Alinear los elementos al inicio */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+/* Estilos para el título de SERVICIOS */
+.seccion_servicios .titulo_seccion {
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos para la lista de servicios */
+.lista-servicios {
+  list-style: none; /* Quitamos los puntos de la lista */
+}
+
+.lista-servicios li {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  align-items: center; /* Alinear los elementos verticalmente */
+  margin-bottom: 2rem; /* Espacio entre los elementos */
+}
+
+.lista-servicios li img {
+  width: 5rem; /* Ancho de los iconos */
+  margin-right: 1rem; /* Espacio entre el icono y el texto */
+}
+
+#boton-reserva {  
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid var(--primario);
+  padding: 1% 2%;
+  color:black;
+  background-color: var(--primario);
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.galeria img {
+  width: 30rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Añadimos transición para el cambio de tamaño y color del borde */
+  border: 0.2rem solid transparent; /* Establecemos un borde transparente */
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  border-color: var(--primario); /* Cambiamos el color del borde al amarillo */
+}
+
+/*  ************FOOTER********** */
+
+/* Estilos para el footer */
+footer {
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer-links a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.footer-links p {
+  margin: 0.5rem 0;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.dog_up {
+  width: 5rem;
+}
+
+.redes {
+  width: 3.5rem;
+  margin-left: 0.5rem;
+}
