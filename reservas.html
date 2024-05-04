@@ -6,6 +6,7 @@
     <meta name="keyword" content="hotel, mascotas, cuidados, servicios, peluquería canina, perros, gatos, descanso, fotos"/>
     <title>Formulario de Reservas - CAN REST</title>
     <!-- Ruta a archivo css: -->
+    <link rel="stylesheet" href="css/estilos.css" media="all"/>
     <link rel="stylesheet" href="css/reservas.css" media="all"/>
   </head>
 
@@ -13,43 +14,55 @@
     <!-- Cabecera: -->
     <header>
       <!-- Menú de Idiomas: -->
-      <select name="" id="select_idioma">
-        <option value="es">ES</option>
-        <option value="en">EN</option>
-      </select>
+      <section class="menu-idioma">
+        <section class="idioma-seleccionado">
+            <img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">
+        </section>
+        <section class="idiomas-dispo">
+            <ul>
+                <li>
+                    <a href="home.html" class="es"><img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">ES</a>
+                </li>
+                <li>
+                    <a href="#" class="en"><img src="img/united-kingdom-flag.svg" title="Bandera Reino Unido" alt="Bandera Reino Unido">EN</a>
+                </li>
+            </ul>
+        </section>
+      </section>
 
       <img id="logo" src="img/Logo perrito.svg" title="Logo CAN REST" alt="Logo CAN REST"/>
-      <h1>CAN REST</h1>
+      <h1 class="titulo">CAN REST</h1>
       <p id="slogan">Donde el descanso no tiene raza</p>
     </header>
     
     <main>
-      <section>
-        <h2>Reservas</h2>
-
-        <article class="seccion_servicios">
-          <h3>Descripción de los Servicios</h3>
+      <section class="seccion_servicios">
+          <h2 class="titulo_seccion">Reservas</h2>
+          <h3 class="titulo-form">Descripción de los Servicios</h3>
           <ul class="lista-servicios">
             <li>
               <img src="img/icono-hotel-perros.svg" alt="Caseta para mascotas como hotel para ilustrar los servicios de hotel" title="Icono servicios de hotel"/>
-              <h3>Servicios de Hotel:</h3>
+              <h4>Servicios de Hotel:</h4>
               <p>El hotel de mascotas ofrece cómodas instalaciones diseñadas específicamente para el bienestar y la seguridad de tus mascotas. Estas instalaciones pueden incluir habitaciones individuales o compartidas, equipadas con camas confortables, juguetes y áreas de juego.</p>
             </li>
             <li>
               <img src="img/icono-peluquería.svg" alt="Unas tijeras y un peine cruzados para ilustrar los servicios de peluquería" title="Icono servicios de peluquería"/>
-              <h3>Peluquería:</h3>
+              <h4>Peluquería:</h4>
               <p>Para que tus mascotas se vean y se sientan lo mejor posible, el hotel ofrece servicios de peluquería. Esto incluye baños relajantes, cepillado y peinado, corte de uñas, y tratamientos especiales como hidratación para la piel y el pelaje.</p>
             </li>
             <li>
               <img src="img/icono-camara.svg" alt="Icono con forma de cámara para ilustrar la galería de fotos" title="Icono Galería de fotos"/>
-              <h3>Sesión de fotos:</h3>
+              <h4>Sesión de fotos:</h4>
               <p>Ofrecemos sesiones de fotos profesionales para capturar la esencia única de tu mascota en un ambiente relajado y divertido. Después de la sesión, recibirás una galería digital de imágenes editadas para que puedas atesorar los recuerdos para siempre.</p>
             </li>
           </ul>
       </section>
 
       <!-- Formulario para realizar las reservas: -->
-      <section>
+      <section id="formulario">
+        <h3 class="titulo-form">Formulario:</h3>
+        <p>Introduzca los siguientes datos para poder realizar una reserva con nosotros:</p>
+
         <form action="#" method="POST">
           <label for="nombre">Nombre:</label><br>
           <input type="text" id="nombre" name="nombre" required><br><br>
