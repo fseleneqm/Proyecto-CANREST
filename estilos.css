@@ -1,101 +1,259 @@
-* {
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
-html body {
-  border: 0;
-  height: 100%;
-  width: 100%;
-  /* poner siempre para que el html tenga tamaño definido*/
-}
 
+/*  ************HEADER************** */
+
+/* Estilos para el header */
 header {
-  height: 20%;
+  text-align: center;
   background-color: #000000;
-}
-
-header select{
-  position: absolute;
-}
-
-h1 {
   color: white;
+  padding: 20px 0;
+}
+
+#select_idioma {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#logo {
+  width: 10em;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  margin: 0;
+}
+
+#slogan {
+  margin: 1em 0;
+}
+
+/* Estilos para el menú de navegación */
+.navegador {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
   text-align: center;
 }
 
-#logo{
-  height: 200px;
-  width: 100%;
-}
-
-header p {
-  color: white;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-
-
-nav{
-  height: 5%;
-  background-color: rgb(255, 183, 0); /* Cambia el color de fondo según lo necesites */
-  text-align: center;
-}
-
-ul li {
-  display: inline-block;
-}
-
-ul li a {
-  padding: 10px; /* Espaciado alrededor del texto */
-  text-decoration: none;
-  font-weight: bold;
-  color: rgb(0, 0, 0); /* Cambia el color del texto a azul */
-  margin: 5px;
+.navegador ul {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  border: 0;
-}
-
-section{
-  display: block;
-  border: 1px solid #000000;
-  text-align: center;
-
-
-}
-
-footer {
-  color: white;
-  background-color: #000000; /* Verde */
-  width: 100%;
-  height: 10%;
-}
-
-
-.texto_footer{
-  background-color: #000000;
-  text-align: left;
-  display: inline;
-  font-size: small;
-  color: white;
-  float: left;
-  }
-
-.redes{
-  width: 20px;
-  height: 20px;
-}
-
-.dog_up{
+  display: flex;
+  justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px; 
+  border: 2px solid black;
+  padding: 10px;
 }
 
-.img_footer{
-  float: right;
+.navegador ul li {
+  margin-right: 20px;
+}
+
+.navegador ul li:last-child {
+  margin-right: 0;
+}
+
+.navegador ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 14px 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navegador ul li a:hover {
+  color: #ffc800;
+}
+
+
+/*  ************SECCIONES********** */
+/* Estilos para las secciones */
+section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.titulo_seccion {
+  margin-top: 0;
+}
+
+.icono_divisor {
+  width: 8em;
+  margin: 20px auto;
+}
+
+/* Estilos para los títulos de los artículos */
+.seccion_quienes .titulo_seccion,
+.seccion_servicios .titulo_seccion,
+.seccion_fotos .titulo_seccion,
+.seccion_resena .titulo_seccion {
+  margin-top: 0;
+  font-size: 2em; /* Tamaño grande para llamar la atención */
+  color: #FFBD59; /* Color anaranjado */
+  text-transform: uppercase; /* Convertir texto en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+
+/* Estilos para el artículo de servicios */
+.seccion_servicios {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  justify-content: space-between; /* Distribuir el espacio entre los elementos */
+  align-items: flex-start; /* Alinear los elementos al inicio */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+/* Estilos para el título de SERVICIOS */
+.seccion_servicios .titulo_seccion {
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos para la lista de servicios */
+.lista-servicios {
+  list-style: none; /* Quitamos los puntos de la lista */
+}
+
+.lista-servicios li {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  align-items: center; /* Alinear los elementos verticalmente */
+  margin-bottom: 20px; /* Espacio entre los elementos */
+}
+
+.lista-servicios li img {
+  width: 50px; /* Ancho de los iconos */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+  background-color: #FFA500; /* Color de fondo naranja */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 40%; /* Ancho del formulario */
+  margin-right: 20px; /* Margen derecho para separar del borde derecho */
+}
+
+.formulario-contacto h3 {
+  text-align: center; /* Alineación del título al centro */
+}
+
+.formulario-contacto form {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  flex-direction: column; /* Apilamos los elementos verticalmente */
+}
+
+.formulario-contacto label,
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button {
+  margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris */
+}
+
+.formulario-contacto button {
+  background-color: #000000; /* Color de fondo negro */
+  color: #fff; /* Color de texto blanco */
+  border: none; /* Quitamos el borde */
+  padding: 10px 0; /* Espaciado interno vertical */
+  cursor: pointer; /* Cursor de tipo puntero */
+}
+
+.formulario-contacto button:hover {
+  background-color: #000000; /* Cambio de color al pasar el cursor */
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
   background-color: #000000;
-  text-align: end;
-  }
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.dog_up {
+  width: 5em;
+}
+
+.redes {
+  width: 3.5em;
+  margin-left: 5px;
+}
+
+
+
+/* Estilos para la galería de imágenes */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Añadimos transición para el cambio de tamaño y color del borde */
+  border: 2px solid transparent; /* Establecemos un borde transparente */
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  border-color: FFA500; /* Cambiamos el color del borde al amarillo */
+}
+
+
+
+/* Estilos para el audio */
+audio{
+  width: 100%;
+  margin-top: 20px;
+}
+
