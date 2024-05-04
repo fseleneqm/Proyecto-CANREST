@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Can rest</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
+
   <body>
     <header>
       <select name="" id="select_idioma">
@@ -28,93 +29,141 @@
         <li><a href="home.html">INICIO</a></li>
         <li><a href="servicios.html">SERVICIOS</a></li>
         <li><a href="reservas.html">RESERVAS</a></li>
-        <li>
-          <a href=""></a
-          ><img
-            src="img/dog_up.svg"
-            alt="Icono perrito para volver arriba en la página"
-          />
-        </li>
+        <li><a href="home.html"><img src="img/dog_up.svg" alt="Ir arriba" /></a></li>
         <li><a href="">FOTOS</a></li>
         <li><a href="">NOSOTROS</a></li>
         <li><a href="">RESEÑAS</a></li>
       </ul>
     </nav>
 
-    <section class="seccion_quienes">
-      <h2 class="titulo_seccion">QUIENES SOMOS</h2>
-      <p></p>
-      <img
-        class="icono_divisor"
-        src="img/Logo naranja.svg"
-        alt="Logo perrito que divide la sección"
-      />
+    <section>
+      <article class="seccion_quienes">
+        <h2 class="titulo_seccion">QUIENES SOMOS</h2>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img
+          class="icono_divisor"
+          src="img/Logo naranja.svg"
+          alt="Logo perrito que divide la sección"
+        />
+      </article>
     </section>
 
-    <section class="seccion_servicios">
-      <h2 class="titulo_seccion">SERVICIOS</h2>
-      <img src="img/icono-hotel-perros.svg" alt="Icono hotel perros" />
-      <h3 class="">Hotel:</h3>
-      <p>Disfruta tus vacaciones y nosotros los cuidamos.</p>
-      <img src="img/icono-peluquería.svg" alt="Icono peluquería canina" />
-      <h3>Peluquería:</h3>
-      <p>Ponemos guapos a tus perritos</p>
-      <img src="img/icono-camara.svg" alt="Icono camara fotográfica" />
-      <h3>Sesión de fotos:</h3>
-      <p>Capturamos la esencia de tus mascotas.</p>
-      <img
-        class="icono_divisor"
-        src="img/Logo naranja.svg"
-        alt="Logo perrito que divide la sección"
-      />
+    <section>
+
+      
+      <article class="seccion_servicios">
+        <h2 class="titulo_seccion">SERVICIOS</h2>
+        <ul class="lista-servicios">
+          <li>
+            <img src="img/icono-hotel-perros.svg" alt="Icono hotel perros" />
+            <h3 class="">Hotel:</h3>
+            <p>Disfruta tus vacaciones y nosotros los cuidamos.</p>
+          </li>
+          <li>
+            <img src="img/icono-peluquería.svg" alt="Icono peluquería canina" />
+            <h3>Peluquería:</h3>
+            <p>Ponemos guapos a tus perritos</p>
+          </li>
+          <li>
+            <img src="img/icono-camara.svg" alt="Icono camara fotográfica" />
+            <h3>Sesión de fotos:</h3>
+            <p>Capturamos la esencia de tus mascotas.</p>
+          </li>
+        </ul>
+        <aside class="formulario-contacto">
+          <h3>Reserva de Servicios</h3>
+          <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+      
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      
+            <button type="submit">Enviar</button>
+          </form>
+        </aside>
+      </article>
+      
+
+
+
     </section>
 
-    <section class="seccion_fotos">
-      <h2 class="titulo_seccion">FOTOS</h2>
-      <section class="galeria">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </section>
-      <img
-        class="icono_divisor"
-        src="img/Logo naranja.svg"
-        alt="Logo perrito que divide la sección"
-      />
+    <section>
+      <article class="seccion_fotos">
+        <h2 class="titulo_seccion">FOTOS</h2>
+        <article class="galeria">
+          <img src="img/foto 1.jpg" alt="Foto 1" />
+          <p class="desc">Foto 1 - Add a description of the image here</p>
+          <img src="img/foto 2.jpg" alt="Foto 2" />
+          <p class="desc">Foto 2 - Add a description of the image here</p>
+          <img src="img/foto 3.jpg" alt="Foto 3" />
+          <p class="desc">Foto 3 - Add a description of the image here</p>
+        </article>
+        <img
+          class="icono_divisor"
+          src="img/Logo naranja.svg"
+          alt="Logo perrito que divide la sección"
+        />
+      </article>
     </section>
 
-    <section class="seccion_resena">
-      <h2 class="titulo_seccion">RESEÑAS</h2>
+    <section>
+      <article class="seccion_resena">
+        <h2 class="titulo_seccion">RESEÑAS</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
+        </p>
 
-      <img
-        class="icono_divisor"
-        src="img/Logo naranja.svg"
-        alt="Logo perrito que divide la sección"
-      />
+        <img
+          class="icono_divisor"
+          src="img/Logo naranja.svg"
+          alt="Logo perrito que divide la sección"
+        />
+      </article>
     </section>
+
+    <audio controls autoplay loop>
+      <source src="audio/fondo.mp3" type="audio/mp3">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
 
     <footer>
-
-      <section class="texto_footer">
-        <a href="">Terminos y condiciones</a>
+      <section class="footer-links">
+        <a href="#">Terminos y condiciones</a>
         <p>Datos de contacto</p>
         <p>Dirección: Calle X, Nº 1. CP 38000</p>
       </section>
 
-
-    <img src="img/dog_up_orange.svg" alt="" class="dog_up">
-
-
-      <section class="img_footer">
-      <img src="img/instagram.svg" alt="" class="redes">
-      <img src="img/facebook.svg" alt="" class="redes">
-      <img src="img/whatsapp.svg" alt="" class="redes">
+      <section>
+        <a href="#top"><img src="img/dog_up_orange.svg" alt="Ir arriba" class="dog_up" /></a>
       </section>
 
+      <section class="footer-social">
+        <img src="img/instagram.svg" alt="" class="redes" />
+        <img src="img/facebook.svg" alt="" class="redes" />
+        <img src="img/whatsapp.svg" alt="" class="redes" />
+      </section>
     </footer>
-
   </body>
 </html>
