@@ -17,20 +17,20 @@
     <header>
       <section class="menu-idioma">
         <section class="idioma-seleccionado">
-            <img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">
+            <img src="/img/spain-flag.svg" title="Bandera España" alt="Bandera España">
         </section>
         <section class="idiomas-dispo">
             <ul>
                 <li>
-                    <a href="home.html" class="es"><img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">ES</a>
+                    <a href="home.html" class="es"><img src="/img/spain-flag.svg" title="Bandera España" alt="Bandera España">ES</a>
                 </li>
                 <li>
-                    <a href="#" class="en"><img src="img/united-kingdom-flag.svg" title="Bandera Reino Unido" alt="Bandera Reino Unido">EN</a>
+                    <a href="#" class="en"><img src="/img/united-kingdom-flag.svg" title="Bandera Reino Unido" alt="Bandera Reino Unido">EN</a>
                 </li>
             </ul>
         </section>
       </section>
-      <section>
+      <section class="marca">
         <img
         id="logo"
         src="img/Logo perrito.svg"
@@ -66,9 +66,7 @@
           alt="Logo perrito que divide la sección"
         />
       </article>
-    </section>
 
-    <section>
       <article class="seccion_servicios">
         <h2 class="titulo_seccion">SERVICIOS</h2>
         <ul class="lista-servicios">
@@ -88,14 +86,16 @@
             <p>Capturamos la esencia de tus mascotas.</p>
           </li>
           <li>
-            <button id="boton-reserva">Reserva aquí<a href="reservas.html"></a></button>
+            <a id="boton-reserva" href="reservas.html">Reserva aquí</a>
           </li>
-        </ul>
-        
+        </ul> 
+        <img
+          class="icono_divisor"
+          src="img/Logo naranja.svg"
+          alt="Logo perrito que divide la sección"
+        />
       </article>      
-    </section>
 
-    <section>
       <article class="seccion_fotos">
         <h2 class="titulo_seccion">GALERÍA</h2>
         <article class="galeria">
@@ -106,23 +106,13 @@
           <img src="img/foto 3.jpg" alt="Foto 3 - un perro en una piscina" />
           <p class="desc">¡Disfrutando de nuestra piscina!</p>
         </article>
-        <article class="galeria">
-          <video width="640" height="360" controls>
-            <source src="video/CAN REST.mp4" type="video/mp4">
-            <source src="video/CAN REST (video-converter.com).webm" type="video/webm">
-            <source src="video/CAN REST (video-converter.com).mov" type="video/mov">
-            <!-- Texto alternativo -->
-          </video>
-        </article>
         <img
           class="icono_divisor"
           src="img/Logo naranja.svg"
           alt="Logo perrito que divide la sección"
         />
       </article>
-    </section>
 
-    <section>
       <article class="seccion_resena">
         <h2 class="titulo_seccion">RESEÑAS</h2>
         <br>
@@ -150,6 +140,9 @@
       <section class="footer-links">
         <a href="#">Términos y condiciones</a>
         <p>Datos de contacto:</p>
+        <a href="tel:+349221234567">&emsp;Tel: +34 922 123 45 67</a>
+        <br>
+        <a href="mailto:info@canrest.com">&emsp;Email: info@canrest.com</a>
         <p>Dirección: Calle X, Nº 1. CP 38000</p>
       </section>
 
@@ -158,9 +151,9 @@
       </section>
 
       <section class="footer-social">
-        <img src="img/instagram.svg" alt="" class="redes" />
-        <img src="img/facebook.svg" alt="" class="redes" />
-        <img src="img/whatsapp.svg" alt="" class="redes" />
+        <a href="#"><img src="img/instagram.svg" alt="" class="redes" /></a>
+        <a href="#"><img src="img/facebook.svg" alt="" class="redes" /></a>
+        <a href="#"><img src="img/whatsapp.svg" alt="" class="redes" /></a>
       </section>
     </footer>
   </body>

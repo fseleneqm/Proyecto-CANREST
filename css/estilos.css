@@ -15,9 +15,9 @@
   border: 0;
 }
 
-/* definir aspectos en general del html */
+/* Definir aspectos en general del html */
 html {
-  /* ponemos el tamaño al máximo del doc */
+  /* Ponemos el tamaño al máximo del doc */
   height: 100%;
   width: 100%;
   font-size: 62.5%; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
@@ -35,29 +35,27 @@ header {
   text-align: center;
   background-color: var(--negro);
   color: white;
-  padding: 2rem 0;
 }
 
-#select_idioma {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
+header section {
+  text-align: center;
+}
+
+.marca {
+  padding: 3rem 3rem;
 }
 
 #logo {
-  margin-bottom: 1rem;
-  max-width: 50rem;
+  max-width: 25rem;
 }
 
 .titulo {
-  margin: 0;
-  font-size: 5rem;
+  font-size: 6rem;
   color: var(--blanco);
   font-family: 'Consolas', sans-serif;
 }
 
 #slogan {
-  margin: 0.1rem 0;
   font-size: 1.5rem;
   font-style: italic;
   color: var(--blanco);
@@ -65,24 +63,35 @@ header {
 }
 
 .menu-idioma img {
-  max-width: 3rem;
+  width: 3rem;
 }
 
+.menu-idioma {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0;
+}
+/*  */
 .idiomas-dispo ul {
-  display: none;
+  visibility: hidden;
 }
-
 
 .idiomas-dispo ul li {
   list-style: none;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
 }
 
-/*  */
+.idiomas-dispo ul li a {
+  text-decoration: none;
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+}
+
+/* Desplegar el menú de cambio de idioma */
 .menu-idioma:hover ul {
-  display: block;
+  display: inline-block;
+  visibility: visible;
 }
 
 /* ************NAVEGACIÓN************** */
@@ -90,7 +99,6 @@ header {
 /* Estilos para el menú de navegación */
 .navegador {
   background-color: #ffffff;
-  overflow: hidden;
   position: sticky;
   top: 0;
   text-align: center;
@@ -101,19 +109,13 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border: 0.2rem solid black;
   padding: 1rem;
 }
 
-.navegador ul li {
-  margin-right: 2rem;
-}
 
-.navegador ul li:last-child {
-  margin-right: 0;
-}
 
 .navegador ul li a {
   color: var(--negro);
@@ -124,16 +126,21 @@ header {
 }
 
 .navegador ul li a:hover {
-  color: #ffc800;
+  color: var(--primario);
 }
 
+.navegador img {
+  height: 4rem;
+}
+
+
+/*  ************ AJUSTES HEADER Y NAV PARA PANTALLAS PEQUEÑAS********** */
+@media screen and (max-width: 768px) {
+  
+}
 
 /*  ************SECCIONES********** */
 /* Estilos para las secciones */
-section {
-  text-align: center;
-  padding: 4rem 2rem;
-}
 
 .titulo_seccion {
   margin-top: 0;
@@ -142,6 +149,8 @@ section {
 .icono_divisor {
   width: 15rem;
   margin: 2rem auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Estilos para los títulos de los artículos */
@@ -149,6 +158,8 @@ section {
 .seccion_servicios .titulo_seccion,
 .seccion_fotos .titulo_seccion,
 .seccion_resena .titulo_seccion {
+  text-align: center;
+  padding: 4rem 2rem;
   margin-top: 0; 
   font-size: 3rem; /* Tamaño grande para llamar la atención */
   font-family: 'Consolas', sans-serif;
@@ -156,6 +167,7 @@ section {
   text-transform: uppercase; /* Convertir texto en mayúsculas */
   letter-spacing: 0.2rem; /* Espaciado entre letras */
 }
+
 
 
 /* Estilos para el artículo de servicios */
@@ -188,12 +200,15 @@ section {
 }
 
 #boton-reserva {  
-  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
   border-radius: 0.3rem;
   border: 0.1rem solid var(--primario);
-  padding: 1% 2%;
-  color:black;
+  padding: 1rem 1rem;
+  color:var(--blanco);
   background-color: var(--primario);
+  text-decoration: none;
 }
 
 /* Estilos para la galería de imágenes */
@@ -219,14 +234,6 @@ section {
   border-color: var(--primario); /* Cambiamos el color del borde al amarillo */
 }
 
-.galeria video {
-  width: 30rem;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem;
-  margin: 3rem;
-}
-
 /*  ************FOOTER********** */
 
 /* Estilos para el footer */
@@ -237,16 +244,26 @@ footer {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+footer section {
+  width: 100%;
 }
 
 .footer-links {
   text-decoration: none;
   text-align: left;
+  font-size: 1rem;
 }
 
 .footer-links a {
   color: var(--blanco);
   text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--primario);
 }
 
 .footer-links p {
@@ -258,10 +275,11 @@ footer {
 }
 
 .dog_up {
-  width: 5rem;
+  height: 4rem;
 }
 
 .redes {
   width: 3.5rem;
   margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
