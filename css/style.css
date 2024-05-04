@@ -3,6 +3,9 @@
     --blanco: #FFFFFF;
     --negro: #000000;
     --primario: #FFBD59;
+    font-family: "Montserrat", sans-serif; /* Establecemos la fuente a usar por todo el doc */
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* Limpiar márgenes, padding y bordes base del doc html*/
@@ -10,45 +13,103 @@
     margin: 0;
     padding: 0;
     border: 0;
+    border-style: solid;
+    border-color: black;
 }
 
-/* definir el tamaño general del html y del body */
-html, body {
+/* definir aspectos en general del html */
+html {
+    /* ponemos el tamaño al máximo del doc */
     height: 100%;
     width: 100%;
+    font-size: 62.5%; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
 }
 
-/*  Inserción de iconos para el selector de idiomas */
-#select_idioma option[value="es"]::before {
+body {
+    font-size: 16px; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
+}
+
+#select_idioma option[value="es"] {
     background-image: url('../img/spain-flag.svg');
 }
 
-#select_idioma option[value="en"]::before {
+#select_idioma option[value="en"] {
     background-image: url('../img/united-kingdom-flag.svg');
 }
 
 /* Tamaño del logo */
 #logo {
-    width: 50%; 
-    max-width: 600px;
-    height: auto;
+    max-width: 50rem;
 }
+
+/* Título de la página */
+.titulo {
+    font-size: 5rem;
+    color: var(--blanco);
+    font-family: 'Consolas', sans-serif;
+}
+
+/* Subtítulos / secciones */
+h2 {
+    font-size: 2rem;
+    font-family: 'Consolas', sans-serif;
+}
+
+/* Encabezado de la página */
+
+header {
+    background-color: black;
+}
+
+/* Estilo del menú de navegación */
 
 nav {
     display: flex;
-    justify-content: center; /* Center the logo horizontally */
+    justify-content: center; /* centra el logo horizontalmente */
 }
 
+#slogan {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--blanco);
+    font-family: 'Consolas', sans-serif;
+}
 /* Tamaño de los iconos en la sección servicios */
 .seccion_servicios img {
     width: 10%; 
-    max-width: 60px;
+    max-width: 6rem;
     height: auto;
 }
 
 /* Tamaño de los iconos divisores entre secciones del home */
 .seccion_servicios .icono_divisor, .icono_divisor {
     width: 20%; 
-    max-width: 600px;
+    max-width: 10rem;
     height: auto;
+}
+
+.menu-idioma img {
+    max-width: 3rem;
+}
+
+.idiomas-dispo ul {
+    display: none;
+}
+
+
+.idiomas-dispo ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  */
+.menu-idioma:hover ul {
+    display: block;
+}
+
+/* estilo del menú de navegación */
+.navegador {
+    background-color: var(--blanco);
 }

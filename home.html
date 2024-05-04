@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Can rest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <img id="logo" src="img/Logo perrito.svg" title="Logo CAN REST" alt="Logo CAN REST">
-        <h1 class="titulo">CAN REST</h1>
-        <p id="slogan">Donde el descanso no tiene raza</p>
-        <select name="" id="select_idioma">
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-        </select>
+        <section class="menu-idioma">
+            <section class="idioma-seleccionado">
+                <img src="/img/spain-flag.svg" title="Bandera España" alt="Bandera España">
+            </section>
+            <section class="idiomas-dispo">
+                <ul>
+                    <li>
+                        <a href="home.html" class="es"><img src="/img/spain-flag.svg" title="Bandera España" alt="Bandera España">ES</a>
+                    </li>
+                    <li>
+                        <a href="#" class="en"><img src="/img/united-kingdom-flag.svg" title="Bandera Reino Unido" alt="Bandera Reino Unido">EN</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <img id="logo" src="img/Logo perrito.svg" title="Logo CAN REST" alt="Logo CAN REST. Un perrito durmiendo plácidamente">
+            <h1 class="titulo">CAN REST</h1>
+            <p id="slogan">Donde el descanso no tiene raza</p> 
+        </section>   
     </header> 
     <nav class="navegador">
         <ul>
