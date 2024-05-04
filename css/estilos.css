@@ -219,6 +219,14 @@ section {
   border-color: var(--primario); /* Cambiamos el color del borde al amarillo */
 }
 
+.galeria video {
+  width: 30rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 3rem;
+}
+
 /*  ************FOOTER********** */
 
 /* Estilos para el footer */
