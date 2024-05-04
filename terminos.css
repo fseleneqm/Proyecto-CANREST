@@ -1,0 +1,7 @@
+.terminos {
+    border: 2px solid #ccc; /* Color y grosor del borde */
+    border-radius: 10px; /* Radio de los bordes */
+    padding: 2em 15em; /* Espaciado interno */
+    margin: 2em 10em; /* Espaciado externo */
+    background-color: #f9f9f9; /* Color de fondo */
+}
