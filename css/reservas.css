@@ -1,6 +1,7 @@
 /******** SECCIÓN DE RESERVAS *******/
 
 /* Estilos de la descripción de los servicios */
+
 .seccion_servicios .titulo-form {
   padding-bottom: 3rem;
   font-size: 2rem; /* Tamaño grande para llamar la atención */
@@ -22,7 +23,6 @@
 }
 
 .lista-servicios .parrafo-servicio {
-  /*border: 1px solid coral;*/
   box-sizing: border-box;
   width: 100%;
   padding: 2rem 3rem;
@@ -53,54 +53,60 @@
   background-color:var(--primario); /* Color de fondo naranja */
   padding: 2rem; /* Espaciado interno */
   border-radius: 2rem; /* Bordes redondeados */
-  width: 50%; /* Ancho del formulario */
-  margin: auto; /* Margen derecho para separar del borde derecho */
-  border: 1px solid coral;
+  width: 30%; /* Ancho del formulario */
+  margin: 0 auto; /* Margen derecho para separar del borde derecho */
 }
 
 #formulario h3 {
-  text-align: center; /* Alineación del título al centro */
+  font-family: 'Consolas', sans-serif;
+  text-transform: uppercase; /* Convertir texto en mayúsculas */
+  letter-spacing: 0.2rem; /* Espaciado entre letras */
 }
 
 #formulario p {
-  text-align: left;
-  margin-top: 2rem;
+  margin: 2rem 0 3.5rem; /* top, right and left, bottom */
 }
-
-#formulario form {
-  display: flex; /* Usamos flexbox para organizar los elementos */
-  flex-direction: column; /* Apilamos los elementos verticalmente */
-  align-items: center;
-}
-
 
 #formulario input {
-  margin: auto;
-}
-
-#formulario label,
-#formulario textarea,
-#formulario button {
-  margin-bottom: 1rem;  /*Espacio entre los elementos */
+  margin-bottom: 2rem;
 }
 
 #formulario input,
 #formulario textarea {
-  width: 100%; /* Ancho completo */
+  width: 90%; /* Ancho completo */
   padding: 1rem; /* Espaciado interno */
   border-radius: 0.5rem; /* Bordes redondeados */
   border: 1px solid #ccc; /* Borde gris */
+  display: flex;
+  align-items: center;
 }
 
-#formulario button {
-  background-color: #000000; /* Color de fondo negro */
-  color: #fff; /* Color de texto blanco */
+/*#opciones-servs label {
+  display:inline-flex;
+}*/
+
+#opciones-servs :first-child {
+  margin-top: 1rem;
+}
+
+#opciones-servs label, input{
+  vertical-align: middle;	     /* input alineado verticalmente con label */
+  
+  padding: 0;
+}
+
+fieldset button {
+  background-color: var(--negro); /* Color de fondo negro */
+  color: var(--blanco); /* Color de texto blanco */
   border: none; /* Quitamos el borde */
-  padding: 1rem 0; /* Espaciado interno vertical */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  padding: 1rem 3rem; /* Espaciado interno */
   cursor: pointer; /* Cursor de tipo puntero */
+  display: block;
+  margin: 2rem auto 0; /* Centramos el boton */
 }
 
-#formulario button:hover {
-  background-color: #000000; /* Cambio de color al pasar el cursor */
+fieldset button:hover {
+  background-color: #414040; /* Cambio de color al pasar el cursor */
 }
 
