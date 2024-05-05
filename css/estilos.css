@@ -142,10 +142,6 @@ header section {
 /*  ************SECCIONES********** */
 /* Estilos para las secciones */
 
-.titulo_seccion {
-  margin-top: 0;
-}
-
 .icono_divisor {
   width: 15rem;
   margin: 2rem auto;
@@ -159,13 +155,13 @@ header section {
 .seccion_fotos .titulo_seccion,
 .seccion_resena .titulo_seccion {
   text-align: center;
-  padding: 4rem 2rem;
-  margin-top: 0; 
+  padding: 4rem 2rem; /*  */
   font-size: 3rem; /* Tamaño grande para llamar la atención */
   font-family: 'Consolas', sans-serif;
   color: var(--primario); /* Color anaranjado */
   text-transform: uppercase; /* Convertir texto en mayúsculas */
   letter-spacing: 0.2rem; /* Espaciado entre letras */
+  border: 1px solid coral;
 }
 
 
@@ -180,6 +176,7 @@ header section {
 
 /* Estilos para el título de SERVICIOS */
 .seccion_servicios .titulo_seccion {
+  box-sizing: border-box;
   width: 100%; /* Ancho completo */
 }
 
