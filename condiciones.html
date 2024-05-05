@@ -49,9 +49,9 @@
         <li><a href="reservas.html">SERVICIOS</a></li>
         <li><a href="reservas.html">RESERVAS</a></li>
         <li><a href="home.html"><img src="img/dog_up.svg" alt="Ir arriba" /></a></li>
-        <li><a href=#galeria >GALERÍA</a></li>
-        <li><a href=#nosotros>NOSOTROS</a></li>
-        <li><a href=#reseñas>RESEÑAS</a></li>
+        <li><a href="home.html#galeria" >GALERÍA</a></li>
+        <li><a href="home.html#nosotros">NOSOTROS</a></li>
+        <li><a href="home.html#reseñas">RESEÑAS</a></li>
       </ul>
     </nav>
 
@@ -118,25 +118,31 @@
     <p>Todos los derechos reservados.</p>
 </section>
 
-    <footer>
-      <section class="footer-links">
-        <a href="condiciones.html">Términos y condiciones</a>
-        <p>Datos de contacto:</p>
-        <a href="tel:+349221234567">&emsp;Tel: +34 922 123 45 67</a>
-        <br>
-        <a href="mailto:info@canrest.com">&emsp;Email: info@canrest.com</a>
-        <p>Dirección: Calle X, Nº 1. CP 38000</p>
-      </section>
+<!-- Pie de página: -->
 
-      <section>
-        <a href="#top"><img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title=""/></a>
-      </section>
+<footer>
+  <section class="footer-links">
+    <a href="condiciones.html">Términos y condiciones</a>
+    <p>Datos de contacto:</p>
+    <a href="tel:+349221234567">&emsp;Tel: +34 922 123 45 67</a>
+    <br>
+    <a href="mailto:info@canrest.com">&emsp;Email: info@canrest.com</a>
+    <p>Dirección: Calle X, Nº 1. CP 38000</p>
+  </section>
 
-      <section class="footer-social">
-        <a href="#"><img src="img/instagram.svg" alt="" class="redes" /></a>
-        <a href="#"><img src="img/facebook.svg" alt="" class="redes" /></a>
-        <a href="#"><img src="img/whatsapp.svg" alt="" class="redes" /></a>
-      </section>
-    </footer>
-  </body>
+  <section>
+    <a href="#top"  onclick="document.getElementById('clicSound').play()">
+      <img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title="Botón para ir arriba"/>
+    </a>
+  </section>
+
+  <audio id="clicSound" src="audio/ladrido.mp3" type="audio/mpeg"></audio>
+
+  <section class="footer-social">
+    <a href="#"><img src="img/instagram.svg" alt="" class="redes" /></a>
+    <a href="#"><img src="img/facebook.svg" alt="" class="redes" /></a>
+    <a href="#"><img src="img/whatsapp.svg" alt="" class="redes" /></a>
+  </section>
+</footer>
+</body>
 </html>
