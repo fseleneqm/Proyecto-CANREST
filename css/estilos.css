@@ -161,7 +161,6 @@ header section {
   color: var(--primario); /* Color anaranjado */
   text-transform: uppercase; /* Convertir texto en mayúsculas */
   letter-spacing: 0.2rem; /* Espaciado entre letras */
-  border: 1px solid coral;
 }
 
 
@@ -176,7 +175,7 @@ header section {
 
 /* Estilos para el título de SERVICIOS */
 .seccion_servicios .titulo_seccion {
-  box-sizing: border-box;
+  box-sizing: border-box; 
   width: 100%; /* Ancho completo */
 }
 
