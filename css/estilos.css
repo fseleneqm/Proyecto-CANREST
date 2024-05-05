@@ -25,6 +25,7 @@ html {
 
 body {
   font-size: 16px; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
+  width: 100%;
 }
 
 
@@ -115,8 +116,6 @@ header section {
   padding: 1rem;
 }
 
-
-
 .navegador ul li a {
   color: var(--negro);
   text-decoration: none;
@@ -163,27 +162,33 @@ header section {
   letter-spacing: 0.2rem; /* Espaciado entre letras */
 }
 
+.seccion_quienes {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* centramos horizontalmente */
+  align-items: center; /* y verticalmente */
+  flex-direction: column; /* ordenamos todos los elementos dentro del artículo verticalmente */
+}
 
+/* Estilo del texto dentro de la sección Quiénes somos*/
+.seccion_quienes p {
+  text-align:justify;
+  width: 80%;
+}
 
 /* Estilos para el artículo de servicios */
 .seccion_servicios {
   display: flex; /* Usamos flexbox para organizar los elementos */
-  justify-content: space-between; /* Distribuir el espacio entre los elementos */
-  align-items: flex-start; /* Alinear los elementos al inicio */
+  justify-content: center;
   flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
 }
 
-/* Estilos para el título de SERVICIOS */
-.seccion_servicios .titulo_seccion {
-  box-sizing: border-box; 
-  width: 100%; /* Ancho completo */
+.seccion_servicios .titulo_seccion  {
+  width: 100%;
 }
 
 /* Estilos para la lista de servicios */
 .lista-servicios {
   list-style: none; /* Quitamos los puntos de la lista */
-  width: 50%;
-  padding-left: 2rem;
 }
 
 .lista-servicios li {
@@ -197,6 +202,7 @@ header section {
   margin-right: 1rem; /* Espacio entre el icono y el texto */
 }
 
+/* Estilos para el botón de reserva */
 #boton-reserva {
   text-align: center;
   font-weight: bold;
@@ -209,28 +215,126 @@ header section {
   text-decoration: none;
 }
 
+/* Cambiar colores cuando se haga un hover */
+#boton-reserva:hover{
+  background-color: var(--negro);
+  color: var(--primario);
+  border: 0.1rem solid var(--negro);
+}
+
+/* Estilos adicionales solo para el último elemento */
+.lista-servicios li:last-child {
+  width: 100%; /* Ancho completo */
+  display: flex; /* Usamos flexbox para centrar */
+  justify-content: center; /* Centramos horizontalmente */
+}
+
+/*  ************GALERÍA********** */
+
 /* Estilos para la galería de imágenes */
-.galeria {
+/* Estilo para el contenedor de la galería */
+
+article.galeria {
+
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
+  overflow: hidden;
+  position: relative; /* Añadimos posición relativa para poder posicionar los párrafos relativamente */
+
 }
 
-.galeria img {
-  width: 30rem;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem;
-  transition: transform 0.3s ease, border-color 0.3s ease; /* Añadimos transición para el cambio de tamaño y color del borde */
-  border: 0.2rem solid transparent; /* Establecemos un borde transparente */
+/* Estilo para las imágenes en el carrusel */
+
+article.galeria img {
+
+  width: calc(100% - 20px); /* Restamos 20px para dejar espacio entre las imágenes */
+  margin-right: 20px; /* Añadimos un margen derecho para la separación entre imágenes */
+  transition: transform 0.5s ease, width 0.5s ease; /* Agregamos una transición para el efecto de agrandar */
+  animation: carrusel 15s infinite; /* Definimos la animación para el carrusel automático */
+
 }
 
-.galeria img:hover {
-  transform: scale(1.05);
-  border-color: var(--primario); /* Cambiamos el color del borde al amarillo */
+/* Definimos la animación para el carrusel */
+
+@keyframes carrusel {
+  0% { transform: translateX(0); } /* Empieza desde la primera imagen */
+  33.33% { transform: translateX(-100%); } /* Desliza a la segunda imagen */
+  66.66% { transform: translateX(-200%); } /* Desliza a la tercera imagen */
+  100% { transform: translateX(0); } /* Vuelve a la primera imagen */
 }
+
+/* Estilo para los párrafos */
+
+article.galeria p.desc {
+
+  position: absolute; /* Posicionamos los párrafos de manera absoluta */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #ffbd5977; /* Fondo semitransparente */
+  color: var(--negro);
+  opacity: 0; /* Inicialmente ocultamos los párrafos */
+  transition: opacity 0.5s ease; /* Añadimos una transición para suavizar la aparición del texto */
+}
+
+/* Estilo para mostrar el párrafo al pasar el cursor sobre las imágenes */
+
+article.galeria img:hover + p.desc {
+  opacity: 1; /* Hacemos visible el párrafo al pasar el cursor sobre las imágenes */
+}
+
+/*  ************RESEÑAS********** */
+
+/* Estilos para la sección de reseñas */
+
+.seccion_resena {
+  text-align: center; /* Centra el contenido */
+  z-index: -1; /* Asegura que esta sección esté por debajo de todo lo demás */
+}
+
+/* Estilos para cada reseña */
+
+.seccion_resena article {
+
+  background-color: var(--primario); /* Color de fondo del rectángulo */
+  border-radius: 1rem; /* Bordes redondeados */
+  position: relative; /* Posición relativa para posicionar las comillas */
+  width: 80%; /* Ancho del rectángulo al 80% de la ventana */
+  margin: auto; /* Centra horizontalmente */
+  margin-bottom: 3rem; /* Margen inferior entre reseñas */
+}
+
+/* Estilos para el texto de la reseña */
+
+.seccion_resena article p {
+  color: var(--negro);
+  font-style: italic; /* Aplica el estilo cursiva al texto */
+  text-align: center;
+  padding: 2.5rem; /* Añade un margen superior al texto */
+}
+
+/* Estilos para las comillas */
+
+.seccion_resena article img {
+  position: absolute; /* Posición absoluta para las comillas */
+  width: 3rem; /* Tamaño de las comillas */
+}
+
+/* Comillas iniciales */
+
+.seccion_resena article img:first-of-type {
+  top: 0; /* Posiciona en la parte superior */
+  left: 0; /* Posiciona en el borde izquierdo */
+}
+
+/* Comillas finales */
+
+.seccion_resena article img:last-of-type {
+  bottom: 0; /* Posiciona en la parte inferior */
+  right: 0; /* Posiciona en el borde derecho */
+}
+
 
 /*  ************FOOTER********** */
 

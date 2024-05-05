@@ -56,7 +56,7 @@
 
     <section>
       <article class="seccion_quienes" id="nosotros">
-        <h2 class="titulo_seccion">QUIENES SOMOS </h2>
+        <h2 class="titulo_seccion">QUIÉNES SOMOS </h2>
         <p>
           ¡Bienvenido a CAN REST! En CAN REST, nos dedicamos a brindar un hogar seguro y amoroso para tus queridas mascotas mientras estás fuera. Con instalaciones diseñadas pensando en su comodidad y un equipo dedicado de amantes de los animales, nos esforzamos por asegurarnos de que cada huésped peludo se sienta querido y atendido durante su estancia con nosotros.<br><br>Te invitamos a conocer nuestras instalaciones y nuestros servicos, y a confiar en nosotros para cuidar de tus adorables compañeros en tu ausencia. ¡Esperamos darles la bienvenida pronto a la familia de CAN REST!
         </p>
@@ -72,33 +72,35 @@
         <ul class="lista-servicios">
           <li>
             <img src="img/icono-hotel-perros.svg" alt="Caseta para mascotas como hotel para ilustrar los servicios de hotel" title="Icono servicios de hotel"/>
-            <h3>Hotel:&nbsp;</h3>
+            <h3 class="">Hotel:&nbsp;</h3>
             <p>Disfruta tus vacaciones y nosotros los cuidamos.</p>
           </li>
           <li>
             <img src="img/icono-peluquería.svg" alt="Unas tijeras y un peine cruzados para ilustrar los servicios de peluquería" title="Icono servicios de peluquería"/>
             <h3>Peluquería:&nbsp;</h3>
-            <p>Ponemos guapos a tus perritos</p>
+            <p>Ponemos guapos a tus perritos.</p>
           </li>
           <li>
             <img src="img/icono-camara.svg" alt="Icono con forma de cámara para ilustrar la galería de fotos" title="Icono Galería de fotos"/>
             <h3>Sesión de fotos:&nbsp;</h3>
             <p>Capturamos la esencia de tus mascotas.</p>
           </li>
-          <button>
+          <li>
             <a id="boton-reserva" href="reservas.html">Reserva aquí</a>
-          </button>
+          </li>
         </ul> 
+      </article>
+
+      <article>
         <img
           class="icono_divisor"
           src="img/Logo naranja.svg"
-          alt="Logo perrito que divide la sección"
-        />
+          alt="Logo perrito que divide la sección"/>
       </article>      
 
       <article class="seccion_fotos" id="galeria">
         <h2 class="titulo_seccion">GALERÍA</h2>
-        <article class="galeria">
+        <article class="galeria" id="carousel">
           <img src="img/foto 1.jpg" alt="Foto 1 - Un perro está sentado en una cama para perros" />
           <p class="desc">Un momento de relax total</p>
           <img src="img/foto 2.jpg" alt="Foto 2 - Un parque para perros con valla y caseta para perros" />
@@ -154,6 +156,7 @@
 
     </section>
 
+    <!-- Pie de página: -->
     <footer>
       <section class="footer-links">
         <a href="condiciones.html">Términos y condiciones</a>
@@ -165,8 +168,12 @@
       </section>
 
       <section>
-        <a href="#top"><img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title=""/></a>
+        <a href="#top"  onclick="document.getElementById('clicSound').play()">
+          <img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title="Botón para ir arriba"/>
+        </a>
       </section>
+
+      <audio id="clicSound" src="audio/ladrido.mp3" type="audio/mpeg"></audio>
 
       <section class="footer-social">
         <a href="#"><img src="img/instagram.svg" alt="" class="redes" /></a>

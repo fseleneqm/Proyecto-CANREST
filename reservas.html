@@ -45,9 +45,9 @@
         <li><a href="reservas.html">SERVICIOS</a></li>
         <li><a href="reservas.html">RESERVAS</a></li>
         <li><a href="home.html"><img src="img/dog_up.svg" alt="Ir arriba" /></a></li>
-        <li><a href=#galeria >GALERÍA</a></li>
-        <li><a href=#nosotros>NOSOTROS</a></li>
-        <li><a href=#reseñas>RESEÑAS</a></li>
+        <li><a href="home.html#galeria" >GALERÍA</a></li>
+        <li><a href="home.html#nosotros">NOSOTROS</a></li>
+        <li><a href="home.html#reseñas">RESEÑAS</a></li>
       </ul>
     </nav>
     
@@ -60,17 +60,17 @@
             <li>
               <img src="img/icono-hotel-perros.svg" alt="Caseta para mascotas como hotel para ilustrar los servicios de hotel" title="Icono servicios de hotel"/>
               <h4>Servicios de Hotel:</h4>
-              <p id="parrafo-hotel" class="parrafo-servicio">El hotel de mascotas ofrece cómodas instalaciones diseñadas específicamente para el bienestar y la seguridad de tus mascotas. Estas instalaciones pueden incluir habitaciones individuales o compartidas, equipadas con camas confortables, juguetes y áreas de juego.</p>
+              <p>El hotel de mascotas ofrece cómodas instalaciones diseñadas específicamente para el bienestar y la seguridad de tus mascotas. Estas instalaciones pueden incluir habitaciones individuales o compartidas, equipadas con camas confortables, juguetes y áreas de juego.</p>
             </li>
             <li>
               <img src="img/icono-peluquería.svg" alt="Unas tijeras y un peine cruzados para ilustrar los servicios de peluquería" title="Icono servicios de peluquería"/>
               <h4>Peluquería:</h4>
-              <p id="parrafo-peluqueria" class="parrafo-servicio">Para que tus mascotas se vean y se sientan lo mejor posible, el hotel ofrece servicios de peluquería. Esto incluye baños relajantes, cepillado y peinado, corte de uñas, y tratamientos especiales como hidratación para la piel y el pelaje.</p>
+              <p>Para que tus mascotas se vean y se sientan lo mejor posible, el hotel ofrece servicios de peluquería. Esto incluye baños relajantes, cepillado y peinado, corte de uñas, y tratamientos especiales como hidratación para la piel y el pelaje.</p>
             </li>
             <li>
-              <img id="camara" src="img/icono-camara.svg" alt="Icono con forma de cámara para ilustrar la galería de fotos" title="Icono Galería de fotos"/>
+              <img src="img/icono-camara.svg" alt="Icono con forma de cámara para ilustrar la galería de fotos" title="Icono Galería de fotos"/>
               <h4>Sesión de fotos:</h4>
-              <p id="parrafo-fotos" class="parrafo-servicio">Ofrecemos sesiones de fotos profesionales para capturar la esencia única de tu mascota en un ambiente relajado y divertido. Después de la sesión, recibirás una galería digital de imágenes editadas para que puedas atesorar los recuerdos para siempre.</p>
+              <p>Ofrecemos sesiones de fotos profesionales para capturar la esencia única de tu mascota en un ambiente relajado y divertido. Después de la sesión, recibirás una galería digital de imágenes editadas para que puedas atesorar los recuerdos para siempre.</p>
             </li>
           </ul>
         </article> 
@@ -118,13 +118,13 @@
             <label for="comentarios">Comentarios adicionales de tu mascota:</label>
             <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
           
-            <button type="submit">Enviar</button>
-          </fieldset>
+          <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
     
     <!-- Pie de página: -->
+
     <footer>
       <section class="footer-links">
         <a href="condiciones.html">Términos y condiciones</a>
@@ -136,8 +136,12 @@
       </section>
 
       <section>
-        <a href="#top"><img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title=""/></a>
+        <a href="#top"  onclick="document.getElementById('clicSound').play()">
+          <img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title="Botón para ir arriba"/>
+        </a>
       </section>
+
+      <audio id="clicSound" src="audio/ladrido.mp3" type="audio/mpeg"></audio>
 
       <section class="footer-social">
         <a href="#"><img src="img/instagram.svg" alt="" class="redes" /></a>
@@ -145,6 +149,5 @@
         <a href="#"><img src="img/whatsapp.svg" alt="" class="redes" /></a>
       </section>
     </footer>
-
   </body>
 </html>
