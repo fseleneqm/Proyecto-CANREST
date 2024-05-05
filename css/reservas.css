@@ -1,0 +1,80 @@
+/******** SECCIÓN DE RESERVAS *******/
+
+/* Estilos de la descripción de los servicios::after */
+
+
+
+
+.seccion_servicios .titulo-form {
+  padding: 2rem 1rem;
+  font-size: 2rem; /* Tamaño grande para llamar la atención */
+  font-family: 'Consolas', sans-serif;
+  color: var(--negro); /* Color anaranjado */
+  text-transform: uppercase; /* Convertir texto en mayúsculas */
+  letter-spacing: 0.2rem; /* Espaciado entre letras */
+  text-align: center;
+  border: 1px solid coral;
+}
+
+.lista-servicios .parrafo-servicios {
+
+}
+
+
+/******** FORMULARIO DE CONTACTO *******/
+
+/* Estilos para el formulario de la reserva: */
+#formulario {
+  background-color:var(--primario); /* Color de fondo naranja */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 2rem; /* Bordes redondeados */
+  width: 50%; /* Ancho del formulario */
+  margin: auto; /* Margen derecho para separar del borde derecho */
+}
+
+#formulario h3 {
+  text-align: center; /* Alineación del título al centro */
+}
+
+#formulario p {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+#formulario form {
+  display: flex; /* Usamos flexbox para organizar los elementos */
+  flex-direction: column; /* Apilamos los elementos verticalmente */
+  align-items: center;
+}
+
+
+#formulario input {
+  margin: auto;
+}
+
+#formulario label,
+#formulario textarea,
+#formulario button {
+  margin-bottom: 1rem;  /*Espacio entre los elementos */
+}
+
+#formulario input,
+#formulario textarea {
+  width: 100%; /* Ancho completo */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris */
+}
+
+#formulario button {
+  background-color: #000000; /* Color de fondo negro */
+  color: #fff; /* Color de texto blanco */
+  border: none; /* Quitamos el borde */
+  padding: 1rem 0; /* Espaciado interno vertical */
+  cursor: pointer; /* Cursor de tipo puntero */
+}
+
+#formulario button:hover {
+  background-color: #000000; /* Cambio de color al pasar el cursor */
+}
+
