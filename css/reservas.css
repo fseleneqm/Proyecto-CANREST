@@ -1,24 +1,61 @@
 /******** SECCIÓN DE RESERVAS *******/
 
+/* Estilos de la descripción de los servicios */
 .seccion_servicios .titulo-form {
-  margin-top: 0;
+  padding-bottom: 3rem;
   font-size: 2rem; /* Tamaño grande para llamar la atención */
   font-family: 'Consolas', sans-serif;
   color: var(--negro); /* Color anaranjado */
   text-transform: uppercase; /* Convertir texto en mayúsculas */
   letter-spacing: 0.2rem; /* Espaciado entre letras */
-  text-align: center;
+  text-align: center; /* Alineación del título al centro */
 }
+
+.lista-servicios {
+  width: 50%;
+  margin: 0 auto 8rem; /* top, right and left, bottom */
+}
+
+#camara {
+  width: 6rem; /* Ancho de 60px */
+  height: 5rem; /* Altura de 50px */
+}
+
+.lista-servicios .parrafo-servicio {
+  /*border: 1px solid coral;*/
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem 3rem;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#parrafo-hotel {
+  margin-left: 1rem;
+}
+
+#parrafo-peluqueria {
+  margin-left: 3.4rem;
+}
+
+#parrafo-fotos {
+  margin-left: 2.2rem;
+}
+
+
 
 /******** FORMULARIO DE CONTACTO *******/
 
 /* Estilos para el formulario de la reserva: */
 #formulario {
   background-color:var(--primario); /* Color de fondo naranja */
-  padding: 1rem; /* Espaciado interno */
+  padding: 2rem; /* Espaciado interno */
   border-radius: 2rem; /* Bordes redondeados */
   width: 50%; /* Ancho del formulario */
   margin: auto; /* Margen derecho para separar del borde derecho */
+  border: 1px solid coral;
 }
 
 #formulario h3 {
