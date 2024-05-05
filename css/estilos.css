@@ -183,6 +183,7 @@ header section {
 }
 
 .seccion_servicios .titulo_seccion  {
+  box-sizing: border-box;
   width: 100%;
 }
 
