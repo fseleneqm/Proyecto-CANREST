@@ -182,6 +182,8 @@ header section {
 /* Estilos para la lista de servicios */
 .lista-servicios {
   list-style: none; /* Quitamos los puntos de la lista */
+  width: 50%;
+  padding-left: 2rem;
 }
 
 .lista-servicios li {
@@ -195,7 +197,7 @@ header section {
   margin-right: 1rem; /* Espacio entre el icono y el texto */
 }
 
-#boton-reserva {  
+#boton-reserva {
   text-align: center;
   font-weight: bold;
   font-size: 1.8rem;
