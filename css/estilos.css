@@ -1,0 +1,377 @@
+/* Definir colores corporativos que usaremos */
+:root {
+  --blanco: #FFFFFF;
+  --negro: #000000;
+  --primario: #FFBD59;
+  font-family: "Montserrat", sans-serif; /* Establecemos la fuente a usar por todo el doc */
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Limpiar márgenes, padding y bordes base del doc html*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Definir aspectos en general del html */
+html {
+  /* Ponemos el tamaño al máximo del doc */
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
+}
+
+body {
+  font-size: 16px; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
+}
+
+
+/*  ************HEADER************** */
+
+/* Estilos para el header */
+header {
+  text-align: center;
+  background-color: var(--negro);
+  color: white;
+}
+
+header section {
+  text-align: center;
+}
+
+.marca {
+  padding: 3rem 3rem;
+}
+
+#logo {
+  max-width: 25rem;
+}
+
+.titulo {
+  font-size: 6rem;
+  color: var(--blanco);
+  font-family: 'Consolas', sans-serif;
+}
+
+#slogan {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--blanco);
+  font-family: 'Consolas', sans-serif;
+}
+
+.menu-idioma img {
+  width: 3rem;
+}
+
+.menu-idioma {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0;
+}
+/*  */
+.idiomas-dispo ul {
+  visibility: hidden;
+}
+
+.idiomas-dispo ul li {
+  list-style: none;
+}
+
+.idiomas-dispo ul li a {
+  text-decoration: none;
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+}
+
+/* Desplegar el menú de cambio de idioma */
+.menu-idioma:hover ul {
+  display: inline-block;
+  visibility: visible;
+}
+
+/* ************NAVEGACIÓN************** */
+
+/* Estilos para el menú de navegación */
+.navegador {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.navegador ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid black;
+  padding: 1rem;
+  flex-wrap: wrap; /* Permite que los elementos del menú se envuelvan cuando el espacio es insuficiente */
+}
+
+
+
+.navegador ul li a {
+  color: var(--negro);
+  text-decoration: none;
+  padding: 1.4rem 1.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navegador ul li a:hover {
+  color: var(--primario);
+}
+
+.navegador img {
+  height: 4rem;
+}
+
+
+/*  ************ AJUSTES HEADER Y NAV PARA PANTALLAS PEQUEÑAS********** */
+@media screen and (max-width: 768px) {
+  
+}
+
+/*  ************SECCIONES********** */
+/* Estilos para las secciones */
+
+.titulo_seccion {
+  margin-top: 0;
+}
+
+.icono_divisor {
+  width: 15rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para los títulos de los artículos */
+.seccion_quienes .titulo_seccion,
+.seccion_servicios .titulo_seccion,
+.seccion_fotos .titulo_seccion,
+.seccion_resena .titulo_seccion {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-top: 0; 
+  font-size: 3rem; /* Tamaño grande para llamar la atención */
+  font-family: 'Consolas', sans-serif;
+  color: var(--primario); /* Color anaranjado */
+  text-transform: uppercase; /* Convertir texto en mayúsculas */
+  letter-spacing: 0.2rem; /* Espaciado entre letras */
+}
+
+/* **************** */
+
+
+/* Estilos para el artículo de servicios */
+.seccion_servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Estilos para el título de SERVICIOS */
+.seccion_servicios .titulo_seccion {
+  width: 100%;
+}
+
+/* Estilos para la lista de servicios */
+.lista-servicios {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-servicios li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.lista-servicios li img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+#boton-reserva {
+  width: 100%; /* Ocupa todo el ancho */
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-radius: 0.3rem;
+  border: 0.1rem solid var(--primario);
+  padding: 1rem 0; /* Ajuste del padding */
+  color: var(--blanco);
+  background-color: var(--primario);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* **************** */
+
+/* Estilos para la galería de imágenes */
+/* Estilo para el contenedor de la galería */
+article.galeria {
+  display: flex;
+  overflow: hidden;
+  position: relative; /* Añadimos posición relativa para poder posicionar los párrafos relativamente */
+}
+
+/* Estilo para las imágenes en el carrusel */
+article.galeria img {
+  width: calc(100% - 20px); /* Restamos 20px para dejar espacio entre las imágenes */
+  margin-right: 20px; /* Añadimos un margen derecho para la separación entre imágenes */
+  transition: transform 0.5s ease, width 0.5s ease; /* Agregamos una transición para el efecto de agrandar */
+  animation: carrusel 15s infinite; /* Definimos la animación para el carrusel automático */
+}
+
+/* Estilo para agrandar la imagen al pasar el cursor */
+article.galeria img:hover {
+  transform: scale(1.05); /* Hacemos la imagen un poco más grande */
+}
+
+/* Definimos la animación para el carrusel */
+@keyframes carrusel {
+  0% { transform: translateX(0); } /* Empieza desde la primera imagen */
+  33.33% { transform: translateX(-100%); } /* Desliza a la segunda imagen */
+  66.66% { transform: translateX(-200%); } /* Desliza a la tercera imagen */
+  100% { transform: translateX(0); } /* Vuelve a la primera imagen */
+}
+
+/* Estilo para los párrafos */
+article.galeria p.desc {
+  position: absolute; /* Posicionamos los párrafos de manera absoluta */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #ffbd5977; /* Fondo semitransparente */
+  color: var(--negro);
+  opacity: 0; /* Inicialmente ocultamos los párrafos */
+  transition: opacity 0.5s ease; /* Añadimos una transición para suavizar la aparición del texto */
+}
+
+/* Estilo para mostrar el párrafo al pasar el cursor sobre las imágenes */
+article.galeria img:hover + p.desc {
+  opacity: 1; /* Hacemos visible el párrafo al pasar el cursor sobre las imágenes */
+}
+
+
+
+
+
+
+/*  ************RESEÑAS********** */
+/* Estilos para la sección de reseñas */
+.seccion_resena {
+  text-align: center; /* Centra el contenido */
+  z-index: -1; /* Asegura que esta sección esté por debajo de todo lo demás */
+}
+
+/* Estilos para cada reseña */
+.seccion_resena article {
+  background-color: var(--primario); /* Color de fondo del rectángulo */
+  border-radius: 10px; /* Bordes redondeados */
+  position: relative; /* Posición relativa para posicionar las comillas */
+  width: 80%; /* Ancho del rectángulo al 80% de la ventana */
+  margin: auto; /* Centra horizontalmente */
+  margin-bottom: 3em; /* Margen inferior entre reseñas */
+}
+
+/* Estilos para el texto de la reseña */
+.seccion_resena article p {
+  color: var(--negro);
+  font-style: italic; /* Aplica el estilo cursiva al texto */
+  text-align: center;
+  padding: 2.5em; /* Añade un margen superior al texto */
+}
+
+/* Estilos para las comillas */
+.seccion_resena article img {
+  position: absolute; /* Posición absoluta para las comillas */
+  width: 2.5em; /* Tamaño de las comillas */
+}
+
+/* Comillas iniciales */
+.seccion_resena article img:first-of-type {
+  top: 0; /* Posiciona en la parte superior */
+  left: 0; /* Posiciona en el borde izquierdo */
+}
+
+/* Comillas finales */
+.seccion_resena article img:last-of-type {
+  bottom: 0; /* Posiciona en la parte inferior */
+  right: 0; /* Posiciona en el borde derecho */
+}
+
+
+
+
+
+
+
+/*  ************FOOTER********** */
+
+/* Estilos para el footer */
+footer {
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer section {
+  width: 100%;
+}
+
+.footer-links {
+  text-decoration: none;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--primario);
+}
+
+.footer-links p {
+  margin: 0.5rem 0;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.dog_up {
+  height: 4rem;
+}
+
+.redes {
+  width: 3.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}

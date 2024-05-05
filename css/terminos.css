@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    background-color: var(--negro);
+    color: white;
+    text-transform: uppercase;
+}
+.terminos {
+    text-align: center;
+    border: 2px solid #ccc; /* Color y grosor del borde */
+    border-radius: 10px; /* Radio de los bordes */
+    padding: 2em 2em; /* Espaciado interno */
+    margin: 2em 8em; /* Espaciado externo */
+    background-color: #f9f9f9; /* Color de fondo */
+}
