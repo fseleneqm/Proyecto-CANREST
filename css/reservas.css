@@ -1,10 +1,10 @@
 /******** SECCIÓN DE RESERVAS *******/
-
 /* Estilos de la descripción de los servicios */
 
-.seccion_servicios .titulo-form {
+/* Estilos título descripciones */
+.seccion_servicios .titulo-desc {
   padding-bottom: 3rem;
-  font-size: 2rem; /* Tamaño grande para llamar la atención */
+  font-size: 2rem; /* Tamaño letra */
   font-family: 'Consolas', sans-serif;
   color: var(--negro); /* Color anaranjado */
   text-transform: uppercase; /* Convertir texto en mayúsculas */
@@ -12,36 +12,34 @@
   text-align: center; /* Alineación del título al centro */
 }
 
+/* Estilos para la lista de servicios */
 .lista-servicios {
   width: 50%;
   margin: 0 auto 8rem; /* top, right and left, bottom */
 }
 
+/* Nombres de los servicios */
+.lista-servicios li h4 {
+  font-size: 2rem; /* Tamaño de la letra */
+  margin-right: 2rem;
+  width: 20%; /* Mismo ancho para todos los h4 */
+}
+
+/* Tamaño específico para el icono de la */
 #camara {
   width: 6rem; /* Ancho de 60px */
-  height: 5rem; /* Altura de 50px */
+  height: 5rem;  /* Altura de 50px */
 }
 
-.lista-servicios .parrafo-servicio {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 2rem 3rem;
-  text-align: justify;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.lista-servicios p {
+  width: 100%; /* Mismo ancho para todos los parrafos */
+  box-sizing: border-box; /* Incluye cualquier borde o relleno dentro de la caja del elemento */
+  padding: 2rem 3rem; /* Relleno arriba-abajo, derecha-izquierda */
+  text-align: justify; /* Texto justificado */
 }
 
-#parrafo-hotel {
-  margin-left: 1rem;
-}
-
-#parrafo-peluqueria {
-  margin-left: 3.4rem;
-}
-
-#parrafo-fotos {
-  margin-left: 2.2rem;
+.lista-servicios li img {
+  margin-right: 3rem; /* Espacio entre el icono y el texto */
 }
 
 
@@ -91,7 +89,6 @@
 
 #opciones-servs label, input{
   vertical-align: middle;	     /* input alineado verticalmente con label */
-  
   padding: 0;
 }
 
@@ -109,4 +106,3 @@ fieldset button {
 fieldset button:hover {
   background-color: #414040; /* Cambio de color al pasar el cursor */
 }
-
