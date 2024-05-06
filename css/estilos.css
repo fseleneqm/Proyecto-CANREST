@@ -183,7 +183,7 @@ header section {
 }
 
 .seccion_servicios .titulo_seccion  {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Incluye cualquier borde o relleno dentro de la caja del elemento */
   width: 100%;
 }
 
@@ -357,7 +357,7 @@ footer section {
 .footer-links {
   text-decoration: none;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .footer-links a {
