@@ -1,11 +1,18 @@
-h1{
+/* Estilos para el título H2 de la página */
+h2{
     text-align: center;
     background-color: var(--negro);
     color: white;
     text-transform: uppercase;
 }
+
+/* Alinear subtítulos h3 y el último párrafo */
+h3, .terminos p:last-child {
+  text-align: center;
+}
+/* Estilos general de los términos y condiciones: tanto contenedor como texto dentro */
 .terminos {
-    text-align: center;
+    text-align: justify;
     border: 2px solid #ccc; /* Color y grosor del borde */
     border-radius: 10px; /* Radio de los bordes */
     padding: 2em 2em; /* Espaciado interno */
