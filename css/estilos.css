@@ -254,12 +254,13 @@ article.galeria img {
 
 }
 
-.galeria video {
+article.galeria video {
   width: 30rem;
   height: auto;
   object-fit: cover;
   border-radius: 1rem;
   margin: 3rem;
+  margin: 3rem auto;
 }
 
 /* Definimos la animación para el carrusel */
