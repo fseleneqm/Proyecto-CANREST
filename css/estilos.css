@@ -1,11 +1,10 @@
-/* Definir colores corporativos que usaremos */
 :root {
-  --blanco: #FFFFFF;
+  --blanco: #FFFFFF; /* Definir colores corporativos que usaremos */
   --negro: #000000;
   --primario: #FFBD59;
   font-family: "Montserrat", sans-serif; /* Establecemos la fuente a usar por todo el doc */
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-optical-sizing: auto; /* Ajuste automático de tamaño óptico */
+  font-style: normal; /* Estilo de fuente normal */
 }
 
 /* Limpiar márgenes, padding y bordes base del doc html*/
@@ -17,7 +16,7 @@
 
 /* Definir aspectos en general del html */
 html {
-  /* Ponemos el tamaño al máximo del doc */
+  /* Ponemos el la altura y el ancho al máximo del doc */
   height: 100%;
   width: 100%;
   font-size: 62.5%; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
@@ -25,13 +24,15 @@ html {
 
 body {
   font-size: 16px; /* reiniciar font-size para calcular más fácil los rem = 1 rem = 10px */
-  width: 100%;
+  width: 100%; /* ancho del cuerpo al 100% */
 }
 
 
 /*  ************HEADER************** */
 
 /* Estilos para el header */
+
+/* Alineamos el texto dentro y definimos los colores del fondo y la fuenta */
 header {
   text-align: center;
   background-color: var(--negro);
@@ -39,23 +40,26 @@ header {
 }
 
 header section {
-  text-align: center;
+  text-align: center; /* Alinear el texto al centro */
 }
 
 .marca {
   padding: 3rem 3rem;
 }
 
+/* Ancho máximo del logo */
 #logo {
   max-width: 25rem;
 }
 
+/* Definimos la fuente, tamaño y color para el título de la web */
 .titulo {
   font-size: 6rem;
   color: var(--blanco);
   font-family: 'Consolas', sans-serif;
 }
 
+/* Definimos la fuente, tamaño y color para el slogan de la web */
 #slogan {
   font-size: 1.5rem;
   font-style: italic;
@@ -63,25 +67,32 @@ header section {
   font-family: 'Consolas', sans-serif;
 }
 
+/* Estilos para el menú de idiomas */
+
 .menu-idioma img {
-  width: 3rem;
+  width: 3rem; /* Ancho de la imagen */
 }
 
+/* Fijamos posición del menú en la esquina superior derecha */
 .menu-idioma {
   position: absolute;
   top: 0;
   right: 0;
   padding: 0 0;
 }
-/*  */
+
+/* Estilos para los idiomas disponibles */
 .idiomas-dispo ul {
-  visibility: hidden;
+  visibility: hidden; /* Los ocultamos inicialmente (preservando el espacio que ocupan */
 }
 
 .idiomas-dispo ul li {
-  list-style: none;
+  list-style: none; /* Quitar viñetas de la lista */
 }
 
+/* Estilos para los enlaces de idiomas */
+/* Quitamoslas decoraciones, definimos el color de fuente 
+y posicionamos los elementos verticalmente */
 .idiomas-dispo ul li a {
   text-decoration: none;
   color: var(--blanco);
@@ -89,7 +100,7 @@ header section {
   align-items: center;
 }
 
-/* Desplegar el menú de cambio de idioma */
+/* Mostrar el menú de cambio de idioma cuando se hace hover sobre el icono de idioma actual */
 .menu-idioma:hover ul {
   display: inline-block;
   visibility: visible;
@@ -100,12 +111,13 @@ header section {
 /* Estilos para el menú de navegación */
 .navegador {
   background-color: #ffffff;
-  position: sticky;
+  position: sticky; /* Fijamos su posición para que siempre esté visible arriba*/
   top: 0;
   text-align: center;
-  z-index: 1000;
+  z-index: 1000; /* Aseguramos que siempre se vea por encima de otros elementos */
 }
 
+/* Estilos para la lista del menú de navegación */
 .navegador ul {
   list-style-type: none;
   margin: 0;
@@ -117,6 +129,7 @@ header section {
   padding: 1rem;
 }
 
+/* Estilos para los enlaces de navegación */
 .navegador ul li a {
   color: var(--negro);
   text-decoration: none;
@@ -125,10 +138,12 @@ header section {
   transition: background-color 0.3s;
 }
 
+/* Cambiar color de la fuente al pasar el ratón por cualquier elemento del menú nav */
 .navegador ul li a:hover {
   color: var(--primario);
 }
 
+/* Tamaño del icono para volver arriba. Igual que el del footer */ 
 .navegador img {
   height: 4rem;
 }
@@ -136,6 +151,7 @@ header section {
 /*  ************SECCIONES********** */
 /* Estilos para las secciones */
 
+/* Estilos para el icono que separa las secciones */
 .icono_divisor {
   width: 15rem;
   margin: 2rem auto;
@@ -149,16 +165,17 @@ header section {
 .seccion_fotos .titulo_seccion,
 .seccion_resena .titulo_seccion {
   text-align: center;
-  padding: 4rem 2rem; /*  */
+  padding: 4rem 2rem; 
   font-size: 3rem; /* Tamaño grande para llamar la atención */
   font-family: 'Consolas', sans-serif;
-  color: var(--primario); /* Color anaranjado */
+  color: var(--primario); 
   text-transform: uppercase; /* Convertir texto en mayúsculas */
   letter-spacing: 0.2rem; /* Espaciado entre letras */
 }
 
+/* Estilos para la sección Quiénes somos */
 .seccion_quienes {
-  display: flex; /* Use flexbox */
+  display: flex; /* Usamos flexbox */
   justify-content: center; /* centramos horizontalmente */
   align-items: center; /* y verticalmente */
   flex-direction: column; /* ordenamos todos los elementos dentro del artículo verticalmente */
@@ -211,14 +228,14 @@ header section {
   text-decoration: none;
 }
 
-/* Cambiar colores cuando se haga un hover */
+/* Cambiar colores cuando se haga un hover en el botón de reserva */
 #boton-reserva:hover{
   background-color: var(--negro);
   color: var(--primario);
   border: 0.1rem solid var(--negro);
 }
 
-/* Estilos adicionales solo para el último elemento */
+/* Estilos adicionales sólo para que el último elemento salga centrado en vez de alineado a los demás */
 .lista-servicios li:last-child {
   width: 100%; /* Ancho completo */
   display: flex; /* Usamos flexbox para centrar */
@@ -228,8 +245,8 @@ header section {
 /*  ************GALERÍA********** */
 
 /* Estilos para la galería de imágenes */
-/* Estilo para el contenedor de la galería */
 
+/* Estilo para el contenedor de la galería */
 article.galeria {
 
   display: flex;
@@ -249,17 +266,7 @@ article.galeria img {
 
 }
 
-article.galeria video {
-  width: 50rem;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem;
-  margin: 3rem;
-  margin: 3rem auto;
-}
-
 /* Definimos la animación para el carrusel */
-
 @keyframes carrusel {
   0% { transform: translateX(0); } /* Empieza desde la primera imagen */
   33.33% { transform: translateX(-100%); } /* Desliza a la segunda imagen */
@@ -267,10 +274,8 @@ article.galeria video {
   100% { transform: translateX(0); } /* Vuelve a la primera imagen */
 }
 
-/* Estilo para los párrafos */
-
+/* Estilo para los párrafos que identifican las imágenes en la galería*/
 article.galeria p.desc {
-
   position: absolute; /* Posicionamos los párrafos de manera absoluta */
   bottom: 0;
   left: 0;
@@ -284,9 +289,18 @@ article.galeria p.desc {
 }
 
 /* Estilo para mostrar el párrafo al pasar el cursor sobre las imágenes */
-
 article.galeria img:hover + p.desc {
   opacity: 1; /* Hacemos visible el párrafo al pasar el cursor sobre las imágenes */
+}
+
+/* Estilo para el vídeo de la sección Galería */
+article.galeria video {
+  width: 50rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 3rem;
+  margin: 3rem auto;
 }
 
 /*  ************RESEÑAS********** */
@@ -299,9 +313,7 @@ article.galeria img:hover + p.desc {
 }
 
 /* Estilos para cada reseña */
-
 .seccion_resena article {
-
   background-color: var(--primario); /* Color de fondo del rectángulo */
   border-radius: 1rem; /* Bordes redondeados */
   position: relative; /* Posición relativa para posicionar las comillas */
@@ -311,7 +323,6 @@ article.galeria img:hover + p.desc {
 }
 
 /* Estilos para el texto de la reseña */
-
 .seccion_resena article p {
   color: var(--negro);
   font-style: italic; /* Aplica el estilo cursiva al texto */
@@ -320,14 +331,12 @@ article.galeria img:hover + p.desc {
 }
 
 /* Estilos para las comillas */
-
 .seccion_resena article img {
   position: absolute; /* Posición absoluta para las comillas */
   width: 3rem; /* Tamaño de las comillas */
 }
 
 /* Comillas iniciales */
-
 .seccion_resena article img:first-of-type {
   top: 0; /* Posiciona en la parte superior */
   left: 0; /* Posiciona en el borde izquierdo */
@@ -345,12 +354,12 @@ article.galeria img:hover + p.desc {
 
 /* Estilos para el footer */
 footer {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: var(--negro); /* Definimos color del fondo */
+  color: var(--blanco); /* y color de la fuente */
   padding: 2rem 0;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* distribuye uniformemente todos los elementos dentro del footer */
   align-items: center;
 }
 
@@ -358,6 +367,7 @@ footer section {
   width: 100%;
 }
 
+/* Estilos de los enlaces dentro del footer */
 .footer-links {
   text-decoration: none;
   text-align: left;
@@ -369,6 +379,7 @@ footer section {
   text-decoration: none;
 }
 
+/* Cambiamos el color de las fuentes de los enlaces cuando se hace hover  */
 .footer-links a:hover {
   color: var(--primario);
 }
@@ -377,12 +388,14 @@ footer section {
   margin: 0.5rem 0;
 }
 
-.footer-social {
-  text-align: right;
-}
-
+/* Tamaño del icono para volver arriba. Igual que el del navegador */ 
 .dog_up {
   height: 4rem;
+}
+
+/* Estilos de los iconos para las redes sociales */
+.footer-social {
+  text-align: right;
 }
 
 .redes {
