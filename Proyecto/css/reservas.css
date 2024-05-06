@@ -1,0 +1,108 @@
+/******** SECCIÓN DE RESERVAS *******/
+/* Estilos de la descripción de los servicios */
+
+/* Estilos título descripciones */
+.seccion_servicios .titulo-desc {
+  padding-bottom: 3rem;
+  font-size: 2rem; /* Tamaño letra */
+  font-family: 'Consolas', sans-serif;
+  color: var(--negro); /* Color anaranjado */
+  text-transform: uppercase; /* Convertir texto en mayúsculas */
+  letter-spacing: 0.2rem; /* Espaciado entre letras */
+  text-align: center; /* Alineación del título al centro */
+}
+
+/* Estilos para la lista de servicios */
+.lista-servicios {
+  width: 50%;
+  margin: 0 auto 8rem; /* top, right and left, bottom */
+}
+
+/* Nombres de los servicios */
+.lista-servicios li h4 {
+  font-size: 2rem; /* Tamaño de la letra */
+  margin-right: 2rem;
+  width: 20%; /* Mismo ancho para todos los h4 */
+}
+
+/* Tamaño específico para el icono de la */
+#camara {
+  width: 6rem; /* Ancho de 60px */
+  height: 5rem;  /* Altura de 50px */
+}
+
+.lista-servicios p {
+  width: 100%; /* Mismo ancho para todos los parrafos */
+  box-sizing: border-box; /* Incluye cualquier borde o relleno dentro de la caja del elemento */
+  padding: 2rem 3rem; /* Relleno arriba-abajo, derecha-izquierda */
+  text-align: justify; /* Texto justificado */
+}
+
+.lista-servicios li img {
+  margin-right: 3rem; /* Espacio entre el icono y el texto */
+}
+
+
+
+/******** FORMULARIO DE CONTACTO *******/
+
+/* Estilos para el formulario de la reserva: */
+#formulario {
+  background-color:var(--primario); /* Color de fondo naranja */
+  padding: 2rem; /* Espaciado interno */
+  border-radius: 2rem; /* Bordes redondeados */
+  width: 30%; /* Ancho del formulario */
+  margin: 0 auto; /* Margen derecho para separar del borde derecho */
+}
+
+#formulario h3 {
+  font-family: 'Consolas', sans-serif;
+  text-transform: uppercase; /* Convertir texto en mayúsculas */
+  letter-spacing: 0.2rem; /* Espaciado entre letras */
+}
+
+#formulario p {
+  margin: 2rem 0 3.5rem; /* top, right and left, bottom */
+}
+
+#formulario input {
+  margin-bottom: 2rem;
+}
+
+#formulario input,
+#formulario textarea {
+  width: 90%; /* Ancho completo */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  border: 1px solid #ccc; /* Borde gris */
+  display: flex;
+  align-items: center;
+}
+
+/*#opciones-servs label {
+  display:inline-flex;
+}*/
+
+#opciones-servs :first-child {
+  margin-top: 1rem;
+}
+
+#opciones-servs label, input{
+  vertical-align: middle;	     /* input alineado verticalmente con label */
+  padding: 0;
+}
+
+fieldset button {
+  background-color: var(--negro); /* Color de fondo negro */
+  color: var(--blanco); /* Color de texto blanco */
+  border: none; /* Quitamos el borde */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  padding: 1rem 3rem; /* Espaciado interno */
+  cursor: pointer; /* Cursor de tipo puntero */
+  display: block;
+  margin: 2rem auto 0; /* Centramos el boton */
+}
+
+fieldset button:hover {
+  background-color: #414040; /* Cambio de color al pasar el cursor */
+}

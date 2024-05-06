@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Formulario de Reservas del Hotel"/>
+    <meta name="keyword" content="hotel, mascotas, cuidados, servicios, peluquería canina, perros, gatos, descanso, fotos"/>
+    <title>Formulario de Reservas - CAN REST</title>
+    <!-- Ruta a archivo css: -->
+    <link rel="stylesheet" href="css/estilos.css" media="all"/>
+    <link rel="stylesheet" href="css/reservas.css" media="all"/>
+  </head>
+
+  <body>
+    <header>
+      <section class="menu-idioma">
+        <section class="idioma-seleccionado">
+            <img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">
+        </section>
+        <section class="idiomas-dispo">
+            <ul>
+                <li>
+                    <a href="home.html" class="es"><img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">ES</a>
+                </li>
+                <li>
+                    <a href="#" class="en"><img src="img/united-kingdom-flag.svg" title="Bandera Reino Unido" alt="Bandera Reino Unido">EN</a>
+                </li>
+            </ul>
+        </section>
+      </section>
+      <section class="marca">
+        <img
+        id="logo"
+        src="img/Logo perrito.svg"
+        title="Logo CAN REST"
+        alt="Logo CAN REST. Un perrito durmiendo plácidamente"
+        />
+        <h1 class="titulo">CAN REST</h1>
+        <p id="slogan">Donde el descanso no tiene raza</p>
+      </section>
+    </header>
+
+    <nav class="navegador">
+      <ul>
+        <li><a href="home.html">INICIO</a></li>
+        <li><a href="reservas.html">SERVICIOS</a></li>
+        <li><a href="reservas.html">RESERVAS</a></li>
+        <li><a href="home.html"><img src="img/dog_up.svg" alt="Ir arriba" /></a></li>
+        <li><a href="home.html#galeria" >GALERÍA</a></li>
+        <li><a href="home.html#nosotros">NOSOTROS</a></li>
+        <li><a href="home.html#reseñas">RESEÑAS</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section class="seccion_servicios">
+        <article>
+          <h2 class="titulo_seccion">Reservas</h2>
+          <h3 class="titulo-desc">Descripción de los Servicios</h3>
+          <ul class="lista-servicios">
+            <li>
+              <img src="img/icono-hotel-perros.svg" alt="Caseta para mascotas como hotel para ilustrar los servicios de hotel" title="Icono servicios de hotel"/>
+              <h4>Hotel:&nbsp;</h4>
+              <p id="parrafo-hotel">El hotel de mascotas ofrece cómodas instalaciones diseñadas específicamente para el bienestar y la seguridad de tus mascotas. Estas instalaciones pueden incluir habitaciones individuales o compartidas, equipadas con camas confortables, juguetes y áreas de juego.</p>
+            </li>
+            <li>
+              <img src="img/icono-peluquería.svg" alt="Unas tijeras y un peine cruzados para ilustrar los servicios de peluquería" title="Icono servicios de peluquería"/>
+              <h4>Peluquería:&nbsp;</h4>
+              <p >Para que tus mascotas se vean y se sientan lo mejor posible, el hotel ofrece servicios de peluquería. Esto incluye baños relajantes, cepillado y peinado, corte de uñas, y tratamientos especiales como hidratación para la piel y el pelaje.</p>
+            </li>
+            <li>
+              <img id="camara" src="img/icono-camara.svg" alt="Icono con forma de cámara para ilustrar el servicio de sesión de fotos" title="Icono Sesión de fotos"/>
+              <h4>Sesión de fotos:&nbsp;</h4>
+              <p>Ofrecemos sesiones de fotos profesionales para capturar la esencia única de tu mascota en un ambiente relajado y divertido. Después de la sesión, recibirás una galería digital de imágenes editadas para que puedas atesorar los recuerdos para siempre.</p>
+            </li>
+          </ul>
+        </article> 
+      </section>
+
+      <!-- Formulario para realizar las reservas: -->
+      <section id="formulario">
+        <h3 class="titulo-form">Formulario:</h3>
+        <p>Introduzca los siguientes datos para poder realizar una reserva con nosotros:</p>
+
+        <form action="#" method="POST">
+          <fieldset>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+          
+            <label for="nombre">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required>
+          
+            <label for="fecha">Fecha de entrada:</label><br>
+            <input type="date" id="entrada" name="f-entrada" required>
+
+            <label for="fecha">Fecha de salida:</label><br>
+            <input type="date" id="salida" name="f-salida" required>
+
+            <label for="servicios">Servicios que desea para su mascota:</label>
+
+            <fieldset id="opciones-servs">
+              <label for="hotel">Servicio de Hotel</label>
+              <input type="checkbox" id="hotel" name="servicios" value="hotel">
+
+              <label for="peluqueria">Servicio de Peluquería</label>
+              <input type="checkbox" id="peluqueria" name="servicios" value="peluqueria">
+              
+              <label for="sesion_fotos">Sesión de Fotos</label>
+              <input type="checkbox" id="sesion_fotos" name="servicios" value="sesion_fotos">
+            </fieldset>
+            
+            <label for="nombre">Nombre de tu mascota:</label>
+            <input type="text" id="mascota" name="mascota" required>
+
+            <label for="comentarios">Comentarios adicionales de tu mascota:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    
+    <!-- Pie de página: -->
+    <footer>
+      <section class="footer-links">
+        <a href="condiciones.html">Términos y condiciones</a>
+        <p>Datos de contacto:</p>
+        <a href="tel:+349221234567">&emsp;Tel: +34 922 123 45 67</a>
+        <br>
+        <a href="mailto:info@canrest.com">&emsp;Email: info@canrest.com</a>
+        <p>Dirección: Calle X, Nº 1. CP 38000</p>
+      </section>
+
+      <section>
+        <a href="#top"  onclick="document.getElementById('clicSound').play()">
+          <img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title="Botón para ir arriba"/>
+        </a>
+      </section>
+
+      <audio id="clicSound" src="audio/ladrido.mp3" type="audio/mpeg"></audio>
+
+      <section class="footer-social">
+        <a href="#"><img src="img/instagram.svg" alt="" class="redes" /></a>
+        <a href="#"><img src="img/facebook.svg" alt="" class="redes" /></a>
+        <a href="#"><img src="img/whatsapp.svg" alt="" class="redes" /></a>
+      </section>
+    </footer>
+  </body>
+</html>

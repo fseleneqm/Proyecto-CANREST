@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empresa Hotel de Mascotas"/>
+    <meta name="keyword" content="hotel, mascotas, cuidados, servicios, peluquería canina, perros, gatos, descanso">
+    <title>Home Can rest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="menu-idioma">
+        <section class="idioma-seleccionado">
+            <img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">
+        </section>
+        <section class="idiomas-dispo">
+            <ul>
+                <li>
+                    <a href="home.html" class="es"><img src="img/spain-flag.svg" title="Bandera España" alt="Bandera España">ES</a>
+                </li>
+                <li>
+                    <a href="#" class="en"><img src="img/united-kingdom-flag.svg" title="Bandera Reino Unido" alt="Bandera Reino Unido">EN</a>
+                </li>
+            </ul>
+        </section>
+      </section>
+      <section class="marca">
+        <img
+        id="logo"
+        src="img/Logo perrito.svg"
+        title="Logo CAN REST"
+        alt="Logo CAN REST. Un perrito durmiendo plácidamente"
+        />
+        <h1 class="titulo">CAN REST</h1>
+        <p id="slogan">Donde el descanso no tiene raza</p>
+      </section>
+    </header>
+
+    <nav class="navegador">
+      <ul>
+        <li><a href="home.html">INICIO</a></li>
+        <li><a href="reservas.html">SERVICIOS</a></li>
+        <li><a href="reservas.html">RESERVAS</a></li>
+        <li><a href="home.html"><img src="img/dog_up.svg" alt="Ir arriba" /></a></li>
+        <li><a href=#galeria >GALERÍA</a></li>
+        <li><a href=#nosotros>NOSOTROS</a></li>
+        <li><a href=#reseñas>RESEÑAS</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <article class="seccion_quienes" id="nosotros">
+        <h2 class="titulo_seccion">QUIÉNES SOMOS </h2>
+        <p>
+          ¡Bienvenido a CAN REST! En CAN REST, nos dedicamos a brindar un hogar seguro y amoroso para tus queridas mascotas mientras estás fuera. Con instalaciones diseñadas pensando en su comodidad y un equipo dedicado de amantes de los animales, nos esforzamos por asegurarnos de que cada huésped peludo se sienta querido y atendido durante su estancia con nosotros.<br><br>Te invitamos a conocer nuestras instalaciones y nuestros servicos, y a confiar en nosotros para cuidar de tus adorables compañeros en tu ausencia. ¡Esperamos darles la bienvenida pronto a la familia de CAN REST!
+        </p>
+        <img
+          class="icono_divisor"
+          src="img/Logo naranja.svg"
+          alt="Logo perrito que divide la sección"
+        />
+      </article>
+
+      <article class="seccion_servicios" id="servicios">
+        <h2 class="titulo_seccion">SERVICIOS</h2>
+        <ul class="lista-servicios">
+          <li>
+            <img src="img/icono-hotel-perros.svg" alt="Caseta para mascotas como hotel para ilustrar los servicios de hotel" title="Icono servicios de hotel"/>
+            <h3>Hotel:&nbsp;</h3>
+            <p>Disfruta tus vacaciones y nosotros los cuidamos.</p>
+          </li>
+          <li>
+            <img src="img/icono-peluquería.svg" alt="Unas tijeras y un peine cruzados para ilustrar los servicios de peluquería" title="Icono servicios de peluquería"/>
+            <h3>Peluquería:&nbsp;</h3>
+            <p>Ponemos guapos a tus perritos.</p>
+          </li>
+          <li>
+            <img src="img/icono-camara.svg" alt="Icono con forma de cámara para ilustrar el servicio de sesión de fotos" title="Icono Sesión de fotos"/>
+            <h3>Sesión de fotos:&nbsp;</h3>
+            <p>Capturamos la esencia de tus mascotas.</p>
+          </li>
+          <li>
+            <a id="boton-reserva" href="reservas.html">Reserva aquí</a>
+          </li>
+        </ul> 
+      </article>
+
+      <article>
+        <img
+          class="icono_divisor"
+          src="img/Logo naranja.svg"
+          alt="Logo perrito que divide la sección"/>
+      </article>      
+
+      <article class="seccion_fotos" id="galeria">
+        <h2 class="titulo_seccion">GALERÍA</h2>
+        <article class="galeria" id="carousel">
+          <img src="img/foto 1.jpg" alt="Foto 1 - Un perro está sentado en una cama para perros" />
+          <p class="desc">Un momento de relax total</p>
+          <img src="img/foto 2.jpg" alt="Foto 2 - Un parque para perros con valla y caseta para perros" />
+          <p class="desc">Son como niños jugando en el parque</p>
+          <img src="img/foto 3.jpg" alt="Foto 3 - un perro en una piscina" />
+          <p class="desc">¡Disfrutando de nuestra piscina!</p>
+        </article>
+        
+        <article class="galeria">
+          <video width="640" height="360" controls>
+            <source src="video/CAN REST.mp4" type="video/mp4">
+            <source src="video/CAN REST (video-converter.com).webm" type="video/webm">
+            <source src="video/CAN REST (video-converter.com).mov" type="video/mov">
+            <!-- Texto alternativo -->
+          </video>
+        </article>
+    
+        <img
+          class="icono_divisor"
+          src="img/Logo naranja.svg"
+          alt="Logo perrito que divide la sección"
+        />
+      </article>
+
+      <section>
+        <section class="seccion_resena" id="reseñas">
+          <h2 class="titulo_seccion">RESEÑAS</h2>
+  
+        <article class="seccion_resena">
+          <img src="img/comillas inicio.svg" alt="Inicio de reseña" />
+          <p>
+            "¡Nuestra experiencia en CAN REST fue increíble! Desde el momento en que entramos, nos sentimos bienvenidos y tranquilos al dejar a nuestro querido perro bajo su cuidado. El personal era amable y profesional, las instalaciones estaban impecables y nuestro perro parecía haber disfrutado de unas vacaciones propias. Definitivamente recomendamos CAN REST a cualquier dueño de mascotas que busque un lugar seguro y acogedor para dejar a su amigo peludo".
+          </p>
+          <img src="img/comillas cierre.svg" alt="Fin de reseña" />
+  
+        </article>
+  
+        <article class="seccion_resena">
+          <img src="img/comillas inicio.svg" alt="Inicio de reseña" />
+          <p>
+            "No puedo expresar lo agradecido que estoy por el maravilloso servicio que recibimos en CAN REST. Dejamos a nuestro gato durante una semana y recibimos actualizaciones regulares sobre cómo estaba yendo su estancia. Fue evidente que recibió mucho amor y atención durante su tiempo allí. Estoy impresionado por el nivel de profesionalismo y cuidado que brinda este hotel para mascotas. ¡Gracias CAN REST por cuidar tan bien de nuestro peludo amigo!"
+          </p>
+          <img src="img/comillas cierre.svg" alt="Fin de reseña" />
+        </article>
+  
+          <article class="seccion_resena">
+          <img src="img/comillas inicio.svg" alt="Inicio de reseña" />
+          <p>
+            "Mi perro siempre está emocionado cuando llegamos a CAN REST, lo que me da una gran tranquilidad cada vez que tengo que dejarlo mientras estoy fuera. El personal aquí es verdaderamente excepcional; son amables, atentos y se nota que realmente aman a los animales. Las instalaciones son amplias y limpias, y aprecio mucho la atención personalizada que le dan a cada mascota. Recomiendo encarecidamente CAN REST a cualquier persona que busque un lugar donde su mascota pueda sentirse como en casa mientras están lejos".
+          </p>
+          <img src="img/comillas cierre.svg" alt="Fin de reseña" />
+        </article>
+  
+          <img
+            class="icono_divisor"
+            src="img/Logo naranja.svg"
+            alt="Logo perrito que divide la sección"
+          />
+        </section>
+      </section>
+
+    </section>
+
+    <!-- Pie de página: -->
+    <footer>
+      <section class="footer-links">
+        <a href="condiciones.html">Términos y condiciones</a>
+        <p>Datos de contacto:</p>
+        <a href="tel:+349221234567">&emsp;Tel: +34 922 123 45 67</a>
+        <br>
+        <a href="mailto:info@canrest.com">&emsp;Email: info@canrest.com</a>
+        <p>Dirección: Calle X, Nº 1. CP 38000</p>
+      </section>
+
+      <section>
+        <a href="#top"  onclick="document.getElementById('clicSound').play()">
+          <img src="img/dog_up_orange.svg" alt="Icono de perrito de color naranja mirando hacia arriba que lleva al inicio de la web" class="dog_up" title="Botón para ir arriba"/>
+        </a>
+      </section>
+
+      <audio id="clicSound" src="audio/ladrido.mp3" type="audio/mpeg"></audio>
+
+      <section class="footer-social">
+        <a href="#"><img src="img/instagram.svg" alt="" class="redes" /></a>
+        <a href="#"><img src="img/facebook.svg" alt="" class="redes" /></a>
+        <a href="#"><img src="img/whatsapp.svg" alt="" class="redes" /></a>
+      </section>
+    </footer>
+  </body>
+</html>
