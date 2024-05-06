@@ -250,7 +250,7 @@ article.galeria img {
 }
 
 article.galeria video {
-  width: 30rem;
+  width: 50rem;
   height: auto;
   object-fit: cover;
   border-radius: 1rem;
