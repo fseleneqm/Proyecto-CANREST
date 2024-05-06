@@ -103,6 +103,7 @@ header section {
   position: sticky;
   top: 0;
   text-align: center;
+  z-index: 1000;
 }
 
 .navegador ul {
