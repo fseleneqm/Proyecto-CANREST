@@ -87,9 +87,14 @@
   margin-top: 1rem;
 }
 
-#opciones-servs label, input{
-  vertical-align: middle;	     /* input alineado verticalmente con label */
-  padding: 0;
+#opciones-servs label{
+  vertical-align: middle;	     
+  padding: 3rem 0;
+}
+
+#opciones-servs select{
+  margin: 2rem;
+  height: 3rem;
 }
 
 fieldset button {
