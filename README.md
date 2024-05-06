@@ -15,7 +15,7 @@ Pautas:
     - Cada uno de esos items puede ser un section que queremos cargar en la pantalla principal al seleccionarlo, para ello **usamos la # seguido del id**. Así conseguimos cargar ese section en concreto en la página principal debajo del menú.
   - El **logotipo** representa la imagen y finalidad de la empresa, a parte de ser un elemento de identificación porque identifica la empresa también lo es de navegación, porque **pulsando en él nos lleva normalmente a la página home de la empresa**.
   - **Etiquetas**:
-      - Se tiene que hacer uso de las **etiquetas semánticas** como contenedores de la página web y todo su contenido dentro de ellas: header , nav, section, aside, article, footer
+      - Se tiene que hacer uso de las **etiquetas semánticas** como contenedores de la página web y todo su contenido dentro de ellas: header, nav, section, aside, article, footer
       - Tiene que contener:
         -  Un menú.
         -  Párrafos.
