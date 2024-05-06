@@ -104,18 +104,18 @@
             <label for="servicios">Servicios que desea para su mascota:</label>
 
             <fieldset id="opciones-servs">
-              <label for="hotel">Servicio de Hotel</label>
-              <input type="checkbox" id="hotel" name="servicios" value="hotel">
-              <label for="peluqueria">Servicio de Peluquería</label>
-              <input type="checkbox" id="peluqueria" name="servicios" value="peluqueria">
-              <label for="sesion_fotos">Sesión de Fotos</label>
-              <input type="checkbox" id="sesion_fotos" name="servicios" value="sesion_fotos">
+              <label for="servicios">Servicios que desea para su mascota:</label>
+                <select name="Servicios" id=""> <br>
+                  <option value="hotel">Hospedaje</option>
+                  <option value="peluqueria">Peluquería</option>
+                  <option value="sesion_fotos">Sesión de fotos</option>
+                </select>
             </fieldset>
             
             <label for="nombre">Nombre de tu mascota:</label>
             <input type="text" id="mascota" name="mascota" required>
 
-            <label for="comentarios">Comentarios adicionales de tu mascota:</label>
+            <label for="comentarios">Comentarios adicionales de tu mascota o añade otro servicio:</label>
             <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
           
           <button type="submit">Enviar</button>
