@@ -133,12 +133,6 @@ header section {
   height: 4rem;
 }
 
-
-/*  ************ AJUSTES HEADER Y NAV PARA PANTALLAS PEQUEÑAS********** */
-@media screen and (max-width: 768px) {
-  
-}
-
 /*  ************SECCIONES********** */
 /* Estilos para las secciones */
 
@@ -395,4 +389,82 @@ footer section {
   width: 3.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+/*  ************HEADER Y NAVEGACIÓN RESPONSIVE********** */
+
+/* Estilos generales para el header y el navegador */
+@media screen and (min-width: 480px) and (max-width: 1024px ) {
+  /* Ajustes para pantallas de 480px a 1024px de ancho */
+
+  /* Header */
+  .marca {
+    padding: 2rem;
+  }
+
+  .titulo {
+    font-size: 4rem;
+  }
+
+  #slogan {
+    font-size: 1.2rem;
+  }
+
+  #logo {
+    max-width: 20rem;
+  }
+
+  .menu-idioma img {
+    width: 2.5rem;
+  }
+
+  /* Navegador */
+  .navegador ul {
+    flex-direction: column; /* Cambiar a disposición vertical */
+  }
+
+  .navegador ul li {
+    margin: 1rem 0; /* Espacio entre elementos */
+  }
+
+  .navegador ul li a {
+    padding: 1rem 0; /* Reducir relleno vertical */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Ajustes para pantallas de hasta 480px de ancho */
+
+  /* Header */
+  .marca {
+    padding: 1rem;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  #slogan {
+    font-size: 1rem;
+  }
+
+  #logo {
+    max-width: 15rem;
+  }
+
+  .menu-idioma img {
+    width: 2rem;
+  }
+  /* Navegador */
+  .navegador ul {
+    flex-direction: column; /* Cambiar a disposición vertical */
+  }
+
+  .navegador ul li {
+    margin: 1rem 0; /* Espacio entre elementos */
+  }
+
+  .navegador ul li a {
+    padding: 1rem 0; /* Reducir relleno vertical */
+  }
 }
