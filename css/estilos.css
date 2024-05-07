@@ -223,7 +223,7 @@ y posicionamos los elementos verticalmente */
   border-radius: 0.3rem;
   border: 0.1rem solid var(--primario);
   padding: 1rem 1rem;
-  color:var(--blanco);
+  color:var(--negro);
   background-color: var(--primario);
   text-decoration: none;
 }
