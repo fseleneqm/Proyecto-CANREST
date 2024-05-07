@@ -393,6 +393,14 @@ footer section {
   height: 4rem;
 }
 
+/* Estilo de la transcripcion del audio */
+#transcripcion-audio {
+  display: none;
+  font-size: 1.6rem;
+  text-align: center;
+
+}
+
 /* Estilos de los iconos para las redes sociales */
 .footer-social {
   text-align: right;
