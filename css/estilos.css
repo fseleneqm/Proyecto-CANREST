@@ -394,11 +394,9 @@ footer section {
 }
 
 /* Estilo de la transcripcion del audio */
+/* Estado inciial */
 #transcripcion-audio {
   display: none;
-  font-size: 1.6rem;
-  text-align: center;
-
 }
 
 /* Estilos de los iconos para las redes sociales */
